@@ -34,7 +34,8 @@ body{
  }
  #sections{
     border: 1px solid rgb(227, 235, 238);
-    height: 600px;
+    height: auto;
+    padding-bottom: 80px;
    
  }
  .dark_shade{
@@ -46,7 +47,7 @@ background-color: rgb(240, 244, 246);
  .inner_section{
     /* border: 1px solid black; */
     height: 400px;
-    width: 80%;
+    width: 87%;
     margin: auto;
     margin-top: 100px;
  }
@@ -58,6 +59,7 @@ background-color: rgb(240, 244, 246);
     font-size: 40px;
      margin-top: 0px;
      margin-bottom: 0px;
+     margin-left: 8px;
  }
  .inner-section-link{
     margin-top: 15px;
@@ -65,6 +67,7 @@ background-color: rgb(240, 244, 246);
     text-decoration: none;
     color: rgb(35, 141, 193);
     font-weight: 550;
+    margin-right: 10px;
  }
  .inner_flex{
     height: 320px;
@@ -76,6 +79,9 @@ background-color: rgb(240, 244, 246);
  .box_inner{
     width:24%;
     background-color:white;
+ }
+ .box_inner:hover{
+    cursor: pointer;
  }
  .pictures{
     width: 100%;
@@ -89,4 +95,26 @@ background-color: rgb(240, 244, 246);
     color: rgb(35, 141, 193);
     margin-left: 10px;
     font-size: 12px;
+ }
+ .freeicon{
+    border: 2px solid white;
+    display: inline-block;
+    border-radius: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: rgb(100, 171, 11);
+    position:absolute;
+    top: -17px;
+    left: 135px;
+ }
+ .freeicontext{ 
+   margin: 0px;
+   color: white;
+   font-weight: 550;
+   font-size: 13px;
+ }
+ .free{
+    position: relative;
  }
