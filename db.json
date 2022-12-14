@@ -1,0 +1,29 @@
+{
+  "Articles": [
+    {
+      "id": 1,
+       "author":"tasha",
+       "category":"fitness",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1316-the-role-of-exercise-in-addiction-treatment-a022.jpg",
+       "title":" The Role of Exercise in Addiction TreatmentHow Fitness Can Help With Recovery",
+       "readtime":"Read Time ● 8 Min",
+        "seen":10,
+        "likes":5,
+        "comment":2,
+        "free":true
+    },
+    {
+      "id": 2,
+       "author":"",
+       "category":"",
+       "image":"",
+       "title":"",
+       "readtime":"",
+        "seen":10,
+        "likes":5,
+        "comment":2,
+        "free":false
+    }
+   
+  ]
+}
