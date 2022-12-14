@@ -1,0 +1,278 @@
+*{
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#membership{
+    width: 100%;
+    margin-top: 150px;
+}
+#membership_top-content{
+    width: 100%;
+    height:320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg,#cbe8ff 0%,#e1ddfa 60%,#ffedc9 100%);
+}
+
+#membership_top-content div{
+    width: 30%;
+    height: 320px;
+}
+
+#membership_top-content div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#membership_top-content div:first-child>h2{
+    padding-right: 65px;
+    padding-left: 65px;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 0%;
+}
+
+
+#membership_top-content div:first-child p{
+    padding-right: 65px;
+    padding-left: 65px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4e5262;
+}
+
+#membership_top-content div img{
+    width: 100%;
+    height: 320px;
+}
+
+#membership_center-content{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#membership_center-content> #membership_center-content_left,#membership_center-content> #membership_center-content_right{
+    width: 100%;
+    height: 180px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+#membership_center-content> #membership_center-content_left{
+    background-color: #edf8fc;
+}
+
+#membership_center-content> #membership_center-content_right{
+    background-color: #f0f4f6;
+}
+
+
+
+#membership_center-content> #membership_center-content_left div,#membership_center-content> #membership_center-content_right div{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#membership_center-content> #membership_center-content_left div h2,#membership_center-content> #membership_center-content_right div h2{
+    margin-bottom: 0%;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+#membership_center-content> #membership_center-content_left div p,#membership_center-content> #membership_center-content_right div p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #4e5262;
+}
+
+#membership_center-content> #membership_center-content_left div button,#membership_center-content> #membership_center-content_right div button{
+    background-color: #212432;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+#membership_center-content> #membership_center-content_left div button a,#membership_center-content> #membership_center-content_right div button a{
+    text-decoration: none;
+    color: white;
+}
+
+#membership_center-content> #membership_center-content_left div h2 span:first-child{
+    font-weight: 700;
+}
+#membership_center-content> #membership_center-content_left div h2 span:last-child{
+    color: #4296cb;
+    font-weight: 700;
+}
+
+#membership_center-content> #membership_center-content_left div a{
+    color: #4296cb;
+    text-decoration: none;
+}
+#membership_center-content> #membership_center-content_left>div>a:hover{
+    text-decoration: underline;
+}
+
+#membership_center_membershipfeatures{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 60px 0px;
+}
+
+#membership_center_membershipfeatures div{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#membership_center_membershipfeatures div h2{
+    font-weight: 400;
+    font-size: 35px;
+}
+#membership_center_membershipfeatures>div>table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+#membership_center_membershipfeatures>div>table thead tr{
+    border-bottom: 1px solid #e3ebee;
+}
+#membership_center_membershipfeatures>div>table thead tr th{
+    padding: 5px;
+}
+#membership_center_membershipfeatures>div>table tbody td{
+    padding: 15px;
+    border-top: 1px solid #e3ebee;
+    font-size: 14px;
+}
+
+.membershipfeatures_cell{
+    border-left: 1px solid #e3ebee;
+    width: 20%;
+    text-align: center;
+    color: #26bc35;
+}
+
+.membershipfeatures_cell div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+.membershipfeatures_cell div:nth-child(2){
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.membershipfeatures_cell div button{
+    background-color: #212432;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:first-child{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:nth-child(2){
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:last-child{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#membership_bottom-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(130deg,#ece6f8 0%,#f9e7f6 100%);
+    margin-bottom: 100px;
+}
+
+#membership_bottom-content>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+#membership_bottom-content div div:first-child{
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+}
+
+#membership_bottom-content div div:first-child h2{
+    font-size: 36px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0%;
+}
+
+#membership_bottom-content div div:first-child p{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #4e5262;
+}
+
+#membership_bottom-content div div:first-child button{
+    background-color: #ebebf3;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: rgb(9, 9, 9);
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+    
+}
+
+#membership_bottom-content div div:last-child img{
+    width: 100%;
+}
