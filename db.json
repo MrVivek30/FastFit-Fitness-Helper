@@ -1,0 +1,125 @@
+{
+  "gym": [
+    {
+      "id": 4,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-6547-2-week-fb-mobility-85b1.jpg",
+      "category": "2-week",
+      "title": "FB 3-Day: 3 Workouts Per Week for 2 Weeks",
+      "price": "$7.99"
+    },
+    {
+      "id": 5,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_31_fb-low-impact-round-2-fat-loss-program-40-minutes-or-less.jpg",
+      "category": "4-week",
+      "title": "4-Week FB Benchmark Program – Total Body Strength and Conditioning",
+      "price": "$11.99"
+    },
+    {
+      "id": 7,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_29_4-week-fb-blend-burn-fat-build-muscle-tone-35-or-55-minutes-a-day.jpg",
+      "category": "4-week",
+      "title": "4-Week FB Benchmark Program – Total Body Strength and Conditioning",
+      "price": "$11.99"
+    },
+    {
+      "id": 8,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_22_fb-bodyweight-no-equipment-workouts-to-burn-fat-and-tone-up.jpg",
+      "category": "4-week",
+      "title": "4-Week FB Benchmark Program – Total Body Strength and Conditioning",
+      "price": "$11.99"
+    },
+    {
+      "id": 9,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_4_fb-fit-8-week-fat-loss-program-to-lose-weight-build-lean-muscle-and-tone-up.jpg",
+      "category": "8-week",
+      "title": "FB 30 - Round 3 - 8 Week Fat Loss Program For Busy People",
+      "price": "$19.99"
+    },
+    {
+      "id": 10,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_9_fb-xt-maintenancecross-training-program.jpg",
+      "category": "8-week",
+      "title": "FB 30 - Round 3 - 8 Week Fat Loss Program For Busy People",
+      "price": "$19.99"
+    },
+    {
+      "id": 11,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_13_fb-30-round-2-8-week-fat-loss-program-for-busy-people.jpg",
+      "category": "8-week",
+      "title": "FB 30 - Round 3 - 8 Week Fat Loss Program For Busy People",
+      "price": "$19.99"
+    },
+    {
+      "id": 12,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_11_fb-fit-round-2-8-week-fat-loss-program-to-lose-weight-build-lean-muscle-and-tone-up.jpg",
+      "category": "8-week",
+      "title": "FB 30 - Round 3 - 8 Week Fat Loss Program For Busy People",
+      "price": "$19.99"
+    },
+    {
+      "id": 13,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_10_fb-abs-core-program-for-abs-obliques-and-lower-back.jpg",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 15,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_23_fb-burn-smart-hiit-and-strength-program-to-get-fit-quick.jpg",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 16,
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_26_4-week-fb-strong-build-muscle-burn-fat-and-feel-great.jpg",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 17,
+      "img": "url",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 18,
+      "img": "url",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 19,
+      "img": "url",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "id": 20,
+      "img": "url",
+      "category": "1-week",
+      "title": "5 Day Challenge For Busy People: FB30",
+      "price": "$3.99"
+    },
+    {
+      "image": "gfg",
+      "title": "sdgdh",
+      "price": "232",
+      "id": 24,
+      "category": "vcgngv"
+    }
+  ],
+  "user": [
+    {
+      "username": "vivekfitness123",
+      "firstname": "vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "phone": "7003322903"
+    }
+  ]
+}
