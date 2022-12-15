@@ -1,0 +1,197 @@
+{
+  "Articles": [
+    {
+      "id": 1,
+       "author":"Tasha",
+       "category":"Fitness",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1316-the-role-of-exercise-in-addiction-treatment-a022.jpg",
+       "title":" The Role of Exercise in <br> Addiction Treatment <br> How Fitness Can Help With <br> Recovery",
+       "readtime":"Read Time ● 8 Min",
+        "seen":10,
+        "likes":5,
+        "comment":2,
+        "free":true
+    },
+    {
+      "id": 2,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1314-how-to-promote-a-positive-body-image-in-your-children-b97e.jpg",
+       "title":"How to Promote a Positive<br>Body Image in Your Child(ren)<br> Practical Tips, Support and Good<br>Behaviors to Model",
+       "readtime":"Read Time ● 7 Min",
+        "seen":21,
+        "likes":2,
+        "comment":3,
+        "free":true
+    },
+    {
+      "id": 3,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1315-how-personality-traits-shape-exercise-behaviors-b45e.jpg",
+       "title":" How Personality Traits Shape Exercise Behaviors 5 Factors That Impact Your Fitness and Health Habits",
+       "readtime":"Read Time ● 10 Min",
+        "seen":55,
+        "likes":1,
+        "comment":5,
+        "free":true
+    },
+    {
+      "id": 4,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1313-when-rest-is-more-important-than-working-out-9898.jpg",
+       "title":" When Rest is More Important <br> Than Working Out Tips <br> for Managing Rest <br>  Days",
+       "readtime":"Read Time ● 10 Min",
+        "seen":64,
+        "likes":5,
+        "comment":7,
+        "free":true
+    },
+    {
+      "id": 5,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1246-what-is-body-dysmorphia-954c.jpg",
+       "title":"What is Body Dysmorphia?<br>Learn About Extreme Body Image Concers and<br> Tratment",
+       "readtime":"Read Time ● 8 Min",
+        "seen":24,
+        "likes":1,
+        "comment":3,
+        "free":true
+    },
+    {
+      "id": 6,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1264-how-to-cope-with-the-never-ending-news-cycle-82f4.jpg",
+       "title":"How to Cope With The Never-<br>Ending News Cycle<br> Tips For Managing Your News<br> Consumption and Related Emotions",
+       "readtime":"Read Time ● 11 Min",
+        "seen":22,
+        "likes":5,
+        "comment":1,
+        "free":true
+    },
+    {
+      "id": 7,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1255-how-self-awareness-impacts-your-fitness-goals-9dd0.jpg",
+       "title":"How Self-Awareness Impacts<br> Personal Goals<br> Improve Your Health and<br> Wellness with Metacognition",
+       "readtime":"Read Time ● 7 Min",
+        "seen":26,
+        "likes":3,
+        "comment":7,
+        "free":true
+    },
+    {
+      "id": 8,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1259-how-to-form-healthy-habits-abe0.jpg",
+       "title":"How to Form Healthy Habits<br> Reach Your Wellness<br>  Goals With These<br>  Practical Tips",
+       "readtime":"Read Time ● 10 Min",
+        "seen":46,
+        "likes":2,
+        "comment":2,
+        "free":true
+    },
+    {
+      "id": 9,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1263-how-to-practice-positive-self-talk-8939.jpg",
+       "title":"How to Practice Positive<br> Self-Talk<br> How Your Inner Dialogue Affects<br> Your Mental Health and Goals",
+       "readtime":"Read Time ● 7 Min",
+        "seen":32,
+        "likes":6,
+        "comment":3,
+        "free":true
+    },
+    {
+      "id": 10,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1265-how-too-much-positivity-can-backfire-9322.jpg",
+       "title":"How Too Much Positivity Can<br> Backfire<br> Recognize the Negative Effects<br> of Excessive Positivity",
+       "readtime":"Read Time ● 9 Min",
+        "seen":35,
+        "likes":2,
+        "comment":5,
+        "free":true
+    },
+    {
+      "id": 11,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1258-how-habits-affect-our-health-bfc4.jpg",
+       "title":"How Habits Affect Our Health<br> Why Habits Form and How They<br> Can Benefit Our Exercise<br> Journeys",
+       "readtime":"Read Time ● 6 Min",
+        "seen":46,
+        "likes":8,
+        "comment":2,
+        "free":true
+    },
+    {
+      "id": 12,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1262-tips-for-managing-exercise-induced-anxiety-8279.jpg",
+       "title":"Tips for Managing Exercise-<br> Induced Anxiety<br> Reduce the Risk of Panic Attacks<br> While Working Out",
+       "readtime":"Read Time ● 7 Min",
+        "seen":18,
+        "likes":5,
+        "comment":0,
+        "free":true
+    },
+    {
+      "id": 13,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1032-how-to-cope-with-mental-and-physical-pregnancy-challenges-9dda.jpg",
+       "title":"How to Cope With Mental and Physical Pregnancy Challenges Tips for Navigating Infertility Pregnancy Loss, Anxiety, and Postpartum",
+       "readtime":"Read Time ● 9 Min",
+        "seen":96,
+        "likes":1,
+        "comment":0,
+        "free":true
+    },
+    {
+      "id": 14,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1261-panic-disorder-and-exercise-8284.jpg",
+       "title":"Panic Disorder<br> and Exercise<br> Why Exercise-Induced <br> Anxiety Happens",
+       "readtime":"Read Time ● 8 Min",
+        "seen":32,
+        "likes":1,
+        "comment":4,
+        "free":true
+    },
+    {
+      "id": 15,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1257-time-management-tips-a2f5.jpg",
+       "title":"Time Management Tips<br>  Practical Strategies<br>  From Fitness Blender<br>  Trainers",
+       "readtime":"Read Time ● 11 Min",
+        "seen":62,
+        "likes":17,
+        "comment":9,
+        "free":true
+    },
+    {
+      "id": 16,
+       "author":"Tasha",
+       "category":"Mental Health",
+       "image":"https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1256-improving-productivity-with-time-management-8897.jpg",
+       "title":"Improving Productivity with<br>  Time Management How to<br>  Reprioritize to Reach<br>  Your Goals",
+       "readtime":"Read Time ● 7 Min",
+        "seen":51,
+        "likes":13,
+        "comment":3,
+        "free":true
+    }
+   
+  ]
+}
