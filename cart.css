@@ -1,0 +1,69 @@
+#cart-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+#cart-container>div>img {
+    width: 90%;
+
+}
+
+#cart-containerr>div>button {
+    background-color: rgb(23, 226, 226);
+    color: white;
+    border-radius: 6px;
+    border: white;
+}
+
+#cart-container>div {
+    box-shadow: rgba(178, 10, 10, 0.35) 0px 5px 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+#cart-container>div>button:hover {
+    background-color: red;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* height: auto; */
+    width: 97%;
+    align-items: center;
+    box-shadow: rgba(178, 10, 10, 0.35) 0px 5px 15px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.rrr:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    color: teal;
+    /* font-size: 20px; */
+  }
+
+  
+
+.do{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    /* width: 70%; */
+    margin-left: 10%;
+    /* color: rgb(221, 73, 23); */
+}
+
+a:hover{
+    color: rgb(37, 236, 37);
+}
+#hhh{
+    width: 25%;
+
+}
