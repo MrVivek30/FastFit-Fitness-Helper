@@ -10,9 +10,12 @@
     <!-- Fav Icon -->
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://cloudfront.fitnessblender.com/assets/img/icon/favicon-16x16.png" />
-
+    
+    <!-- Social media icons from cdn js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
    
-
     <!-- Google material Icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -20,7 +23,30 @@
     
 </head>
 <body>
-
+     <!------------------- navigation bar part ------------>
+    <div class="nav">
+        <div class="navbar">
+            <img width="16%" src="https://iili.io/HoTS9Zg.png" alt="logo">
+            <div class="cate">
+                <p>WORKOUTS</p>
+                <P>PROGRAM</P>
+                <P>HEALTHY LIVING</P>
+                <P>COMMUNITY</P>
+                <P>ABOUT</P>
+                <P>STORE</P>
+                <P>MEMBERSHIP</P>
+            </div>
+            <div class="signin">
+                <p>Hi! Sign In</p>
+                <p>MY FITNESS</p>
+            </div>
+            <div class="search_cart">
+                <i style="font-size:24px" class="fa">&#xf002;</i>
+                <i style="font-size:24px" class="fa">&#xf290;</i>
+            </div>
+           
+        </div>
+    </div>
     <div id="membership">
         <div id="membership_top-content">
             <div>
@@ -87,7 +113,97 @@
             </div>
         </div>
     </div>
+    <!------------------- footer part --------------------------->
+    <div class="footer">
+        <div>
+            <div class="footerlogo">
+                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+    
+            <div>
+                <h7>WORKOUTS</h7>   
+                <p> WORKOUT VIDEOS</p> 
+                <p>CUSTOM WORKOUTS</p>  
+                <h7> PROGRAMS</h7>  
+                <p>WORKOUT PROGRAMS</p>  
+                <p>MEAL PLANS</p>   
+                <p>PILOT PROGRAMS</p>   
+                <p> ROUTINES</p>   
+            </div>
+    
+            <div>
+                <h7>HEALTHY LIVING</h7>
+                <p>FITNESS</p>
+                <p>HEALTH</p>
+                <p>NUTRITION</p>
+                <p>HEALTHY RECIPES</p>
+                <p>EXPERTS</p>
+            </div>
+    
+            <div>
+                <h7>ABOUT</h7>
+                <p>CAREERS</p> 
+                <p>TUTORIALS</p>
+                <p>OUR TEAM</p>
+                <p>B2B OPTIONS</p> 
+            </div>
+    
+            <div>
+                <h7>MEMBERSHIP</h7>
+                <h7>FB PLUS</h7>
+                <h7>COMMUNITY</h7>
+                <h7>BLOG</h7>
+                <h7>CONTACT US</h7>
+                <h7>FAQ</h7>
+                <h7>STORE</h7>
+            </div>
+            
+        </div>
+       
+    </div>
+    <div class="footerbottom"> 
+        <hr>
+        <div>
+          <div>
+            <div>
+                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+            </div>
+       
+            <div class="bottom"> 
+                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+                </a>
+                
+                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+                </a>
+                
+                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+                </a>
+                
+            </div> 
+        </div>
     
 </body>
 </html>
 <script src="../scripts/Membership.js" type="module"></script>
+<script>
+    // <!------------------- navigation bar code ------------>
+        let navbar=document.querySelector(".nav")
+        
+        window.onscroll=function(){
+            navbar.classList.add("sticky");
+        }
+    // <!------------------- navigation bar code ------------>
+    
+    
+    
+ </script>
