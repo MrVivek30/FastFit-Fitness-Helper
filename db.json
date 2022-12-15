@@ -1,4 +1,72 @@
 {
+  "signup": [
+    {
+      "username": "dmehra2102",
+      "password": "1234",
+      "email": "deepanshumehra2102@gmail.com",
+      "firstname": "Deepanshu",
+      "lastname": "Mehra",
+      "avatar": "https://i.imgur.com/9xEcfJj.png",
+      "createdAt": 1670638319356,
+      "id": 1
+    },
+    {
+      "username": "nehaas1900@gmail.com",
+      "lastname": "jaiswal",
+      "email": "neh1900@gmail.com",
+      "number": "67899",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "username": "nneh jais",
+      "lastname": "jaiswal",
+      "email": "neh1900@gmail.com",
+      "number": "90099",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "mahima",
+      "lastname": "jaiswal",
+      "email": "mHI@MAIL.COM",
+      "number": "78899",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "Mr_Vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "number": "7003322903",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "username": "Mr_Vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "number": "7003322903",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "username": "Mr_Vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "number": "7003322903",
+      "password": "12134",
+      "id": 7
+    },
+    {
+      "username": "Mr_Vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "number": "4674",
+      "password": "1234",
+      "id": 8
+    }
+  ],
   "gym": [
     {
       "id": 4,
@@ -79,47 +147,31 @@
     },
     {
       "id": 17,
-      "img": "url",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_9_fb-xt-maintenancecross-training-program.jpg",
       "category": "1-week",
       "title": "5 Day Challenge For Busy People: FB30",
       "price": "$3.99"
     },
     {
       "id": 18,
-      "img": "url",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_8_fb-booty-booty-boot-camp-butt-and-thigh-program.jpg",
       "category": "1-week",
       "title": "5 Day Challenge For Busy People: FB30",
       "price": "$3.99"
     },
     {
       "id": 19,
-      "img": "url",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/320/320-o_15_fb-flex-upper-body-program-for-arms-shoulder-chest-and-upper-back.jpg",
       "category": "1-week",
       "title": "5 Day Challenge For Busy People: FB30",
       "price": "$3.99"
     },
     {
       "id": 20,
-      "img": "url",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-6170-4-week-fb-strong-round-2-a786.jpg",
       "category": "1-week",
       "title": "5 Day Challenge For Busy People: FB30",
       "price": "$3.99"
-    },
-    {
-      "image": "gfg",
-      "title": "sdgdh",
-      "price": "232",
-      "id": 24,
-      "category": "vcgngv"
-    }
-  ],
-  "user": [
-    {
-      "username": "vivekfitness123",
-      "firstname": "vivek",
-      "lastname": "chaudhary",
-      "email": "vivekchaudhary538@gmail.com",
-      "phone": "7003322903"
     }
   ]
 }

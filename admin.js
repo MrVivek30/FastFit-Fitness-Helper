@@ -58,6 +58,8 @@ postsList.addEventListener("click", (e) => {
         priceValue.value = priceContent;
         
     }
+
+    //******************** */
     btnSubmit.addEventListener("click", (e) => {
         e.preventDefault()
         fetch(`${url}/${id}`, {
@@ -79,6 +81,8 @@ postsList.addEventListener("click", (e) => {
     //update the existing data
     //Mehod:GET
 });
+
+//*************************/
 //Add new post
 //Method:POST
 addPostForm.addEventListener('submit', (e) => {
