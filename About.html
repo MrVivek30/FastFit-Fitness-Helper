@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>About | FitFast-"Fitness Helper" </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+    
+    <style>
+
+        *{
+            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+
+        .navbar{
+            
+            /* border: 1px solid; */
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+        }
+        .cate{
+            margin-left: -50px;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            /* border: 1px solid; */
+        }
+        .cate>p{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            color: rgb(33, 36, 50);
+            align-self: flex-end;
+        }
+        .cate>p:nth-child(7){
+            color: rgb(66, 150, 203);
+        }
+        .signin{
+            /* border: 1px solid; */
+            font-size: 11px;
+            font-weight: 400;
+            line-height: normal;
+            align-self: flex-end;
+        }
+        .signin>p+p{
+            /* border: 1px solid; */
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+        .search_cart{
+            width: 6%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .nav.sticky{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: white;
+        }
+        /* ------------- */
+
+        .img{
+            margin-top: 100px;
+        }
+
+
+        .imgText{
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            color:  rgb(145, 238, 218);
+            position: absolute;
+            top: 300px;
+            left: 200px;
+
+        }
+        .imgText>p:nth-child(2){
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 57.6px;
+            color:  white;
+        }
+
+        .centerText{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            margin-top: 125px;
+            margin-bottom: 125px;
+            color: rgb(78, 82, 98);
+            
+        }
+        .centerText>p:nth-child(1){
+            color: black;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 57.6px;
+        }
+        
+        /* -----------------footer--------------- */
+        .footer{
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: 100px;
+            padding-bottom: 100px;
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .footer h7{
+           color: rgb(227, 235, 238);
+           display: block;
+           margin-bottom: 10px;
+           font-weight: 600;
+        }
+
+        .footer>div{
+            width: 70%;
+            padding-top: 60px;
+            margin: auto;
+         
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        .footerlogo{
+            width: 40%;
+           
+        }
+        .footerbottom{
+            font-size: 12px;
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: -20px;
+           
+        }
+        .footerbottom>div{
+            height: 50px;
+            width: 70%;
+            margin: auto;
+        }
+        .footerbottom>div>div{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        hr{
+           width: 70%;
+           margin: auto;
+           background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: .15px;
+        }
+      
+        .bottom{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-medium_large{
+            background-color: rgb(34, 37, 51);
+            color: white;
+        }
+        .container-medium_large>div{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+        }
+        .container-medium_large>div>p:nth-child(1){
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 57px;
+        }
+        .container-medium_large>div>div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container-medium_large>div>div>div{
+            width: 30%;
+        }
+        .panel-image-grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .images{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    
+<!------------------- navigation bar part ------------>
+    <div class="nav">
+        <div class="navbar">
+            <img width="16%" src="https://iili.io/HoTS9Zg.png" alt="logo">
+            <div class="cate">
+                <p>WORKOUTS</p>
+                <P>PROGRAM</P>
+                <P>HEALTHY LIVING</P>
+                <P>COMMUNITY</P>
+                <P>ABOUT</P>
+                <P>STORE</P>
+                <P>MEMBERSHIP</P>
+            </div>
+            <div class="signin">
+                <p>Hi! Sign In</p>
+                <p>MY FITNESS</p>
+            </div>
+            <div class="search_cart">
+                <i style="font-size:24px" class="fa">&#xf002;</i>
+                <i style="font-size:24px" class="fa">&#xf290;</i>
+            </div>
+           
+        </div>
+    </div>
+
+
+<!-- ----------------container----------------------- -->
+
+    <div class="container"> 
+        <img class="img" width="100%" src="https://d18zdz9g6n5za7.cloudfront.net/about/masthead-xs@2X.jpg" alt="">
+        
+        <div class="imgText">
+           
+            <p>ABOUT FITNESS BLENDER</p>
+            <p>Our goal is to make health and <br> fitness attainable, affordable and <br> approachable.</p>
+        </div>
+
+        <div class="centerText">
+            <p>Created to help you live a better, happier, healthier life.</p>
+            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income level or access to a gym. 
+                That's why we offer hundreds of free, full-length workout videos, the most affordable and effective workout programs on the web, meal plans, 
+                and helpful health, nutrition and fitness information.</p>
+        </div>
+
+        <div>
+            <img  width="100%"  src="https://d18zdz9g6n5za7.cloudfront.net/about/video.jpg" alt="">
+        </div>
+
+        <div class="container-medium_large">
+            <div>
+             <p>We believe in unbiased, gimmick-free, research-backed information</p>
+            <p>The only thing we endorse is eating unprocessed, whole foods, and working out for a strong, healthy body. As a business, we believe good things happen when you put people before profit.</p>
+        
+            <div >
+                <div> <p class="powered"></p>
+                    <i class="icon -about-smiley" aria-hidden="true"></i>
+                    <h6 class="caps-half demi">Powered by You</h6>
+                    <p class="no-pad -tight">Fitness Blender has reached tens of millions around the globe, all from word of
+                      mouth; happy viewers sharing our content with friends and family.</p></div>
+                 
+                     
+                 <div><p class="programs">
+                    <i class="icon -about-programs" aria-hidden="true"></i>
+                    <h6 class="caps-half demi">Programs that Work</h6>
+                    <p class="no-pad -tight">Our workout plans use our online fitness calendar to provide detailed, day-by-day
+                      plans, creating incredible, sustainable results.</p>
+                  </p></div>
+                  
+
+                  <div><p class="workouts"></p>
+                    <i class="icon -about-workouts" aria-hidden="true"></i>
+                    <h6 class="caps-half demi">500+ Free Workouts</h6>
+                    <p class="no-pad -tight">Over 500 free workouts range from 10-85 minutes long, from beginner level to elite
+                      athlete, from HIIT to Pilates, and strength training to bodyweight.</p>
+                    </div>
+                  
+                 </div>
+           
+            </div>
+            
+        </div >
+
+        <div class="panel-image-grid">
+            <div>
+                <img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-01.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-01.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-01@2X.jpg 2x"
+                      alt="">
+            </div>
+            <div><img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-02.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-02.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-02@2X.jpg 2x"
+                      alt=""></div>
+            <div><img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-03.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-03.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-03@2X.jpg 2x"
+                      alt=""></div>
+            <div><img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-04.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-04.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-04@2X.jpg 2x"
+                      alt="" class="anchor-top"></div>
+            <div><img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-05.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-05.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-05@2X.jpg 2x"
+                      alt="" class="anchor-top"></div>
+            <div><img  width="100%"   src="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-06.jpg"
+                      srcset="https://d18zdz9g6n5za7.cloudfront.net/about/gallery-06.jpg 1x, https://d18zdz9g6n5za7.cloudfront.net/about/gallery-06@2X.jpg 2x"
+                      alt=""></div>
+          </div>
+
+          <div class="centerText">
+            <p>A little bit about who we are and
+                how it all got started</p>
+            <p>Fitness Blender was created by just two people; a husband and wife team of personal trainers who thought
+                fitness should be accessible to everyone, regardless of their income. Both Kelli and Daniel felt like there was a
+                lack of reliable health and fitness information on the web, and too many people in the industry were more
+                focused on monetary gain or appearance than they were on good health.</p>
+        </div>
+        
+        <div class="images">
+            <img src="https://d18zdz9g6n5za7.cloudfront.net/about/bio-daniel.jpg" alt="">
+            <img src="https://d18zdz9g6n5za7.cloudfront.net/about/bio-kelli.jpg" alt="">
+        
+        </div>
+    </div>
+
+
+
+    
+<!------------------- footer part --------------------------->
+    <div class="footer">
+        <div>
+            <div class="footerlogo">
+                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+    
+            <div>
+                <h7>WORKOUTS</h7>   
+                <p> WORKOUT VIDEOS</p> 
+                <p>CUSTOM WORKOUTS</p>  
+                <h7> PROGRAMS</h7>  
+                <p>WORKOUT PROGRAMS</p>  
+                <p>MEAL PLANS</p>   
+                <p>PILOT PROGRAMS</p>   
+                <p> ROUTINES</p>   
+            </div>
+    
+            <div>
+                <h7>HEALTHY LIVING</h7>
+                <p>FITNESS</p>
+                <p>HEALTH</p>
+                <p>NUTRITION</p>
+                <p>HEALTHY RECIPES</p>
+                <p>EXPERTS</p>
+            </div>
+    
+            <div>
+                <h7>ABOUT</h7>
+                <p>CAREERS</p> 
+                <p>TUTORIALS</p>
+                <p>OUR TEAM</p>
+                <p>B2B OPTIONS</p> 
+            </div>
+    
+            <div>
+                <h7>MEMBERSHIP</h7>
+                <h7>FB PLUS</h7>
+                <h7>COMMUNITY</h7>
+                <h7>BLOG</h7>
+                <h7>CONTACT US</h7>
+                <h7>FAQ</h7>
+                <h7>STORE</h7>
+            </div>
+            
+        </div>
+       
+    </div>
+    <div class="footerbottom"> 
+        <hr>
+        <div>
+          <div>
+            <div>
+                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+            </div>
+       
+            <div class="bottom"> 
+                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+                </a>
+                
+                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+                </a>
+                
+                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+                </a>
+                
+            </div> 
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    // <!------------------- navigation bar code ------------>
+        let navbar=document.querySelector(".nav")
+        
+        window.onscroll=function(){
+            navbar.classList.add("sticky");
+        }
+    // <!------------------- navigation bar code ------------>
+    
+    
+    
+    </script>
