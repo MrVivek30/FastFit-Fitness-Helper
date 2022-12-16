@@ -5,20 +5,22 @@ const commentUrl = "https://i.ibb.co/5GxsT67/comment.png";
 const container = document.querySelector(".cards_container");
 const paginationWrapper = document.getElementById("pagination_wrapper");
 const articleUrl = "http://localhost:3000/Articles"
-let total_data_count
+const sortByAuthor = document.getElementById("sortByAuthors")
+let outData
 // ---------------------------------------------------------------------
 
 
+// window.addEventListener("load", () => {
+//   getArticles(articleUrl)
+// });
+
 async function getArticles(articleUrl){
      try {
-        let requestArticles = await fetch(`${articleUrl}`);
+        let requestArticles = await fetch(`${articleUrl}?_limit=16`);
             if(requestArticles.ok){
-                 let  getData = await requestArticles.json();
+                 let  getData = await requestArticles.json(); 
                  renderData(getData)
-                 console.log(getData)
-                //  let total_data_count= fetch_todo_request.headers.get("x-total-count");
-                 total_data_count = getData.length
-                 console.log(total_data_count)
+                 //console.log(getData)
             }
      } catch (error) {
         alert("something went wrong in fetching articles")
@@ -29,7 +31,7 @@ async function getArticles(articleUrl){
 getArticles(articleUrl)
 
 // pagination-part
-
+var rootElement = document.documentElement
 
  function renderPaginationButton(){
       paginationWrapper.innerHTML=`
@@ -37,6 +39,8 @@ getArticles(articleUrl)
         ${getAsButton(1,"pagination_buttons",1)}
         ${getAsButton(2,"pagination_buttons",2)}
         ${getAsButton(3,"pagination_buttons",3)}
+        ${getAsButton(4,"pagination_buttons",4)}
+        ${getAsButton(5,"pagination_buttons",5)}
         </div>
       `
 
@@ -44,10 +48,30 @@ getArticles(articleUrl)
       for (let paginationButton of paginationButtons){
         paginationButton.addEventListener("click",function(e){
                 let dataId = e.target.dataset.id
-                getArticles(`${articleUrl}?_limit=5&_page=${dataId}`)
+                getArticles(`${articleUrl}?_limit=16&_page=${dataId}`)
+                resetPrimaryClassInPaginationButtons()
+                e.target.classList.add('button_primary')   
+                scrollToTop()
          })
       }
+
+      function resetPrimaryClassInPaginationButtons() {
+        for (let paginationButton of paginationButtons) {
+          paginationButton.classList.remove('button_primary');
+        }
+      }
  }
+//to-scroll-up
+ function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+
+
+
  renderPaginationButton()
 
 
@@ -113,3 +137,36 @@ function getAsButton(text, cls, dataId ) {
 
     `;
  }
+
+ // sort by authers
+
+ async function getAllArticles(articleUrl){
+  try {
+     let requestArticles = await fetch(articleUrl);
+         if(requestArticles.ok){
+              let  getData = await requestArticles.json();
+              outData =[...getData] 
+              // renderData(getData)
+              // //console.log(getData)
+         }
+  } catch (error) {
+     alert("something went wrong in fetching articles")
+  } 
+
+
+}
+getAllArticles(articleUrl)
+ sortByAuthor.addEventListener("change",function(){
+  let selected = sortByAuthor.value
+  if(selected=="author"){
+    getArticles(articleUrl)
+  }
+     let filterdata= outData.filter(function(elem){
+        
+        return elem.author==selected
+ 
+       })    
+       renderData(filterdata)
+       console.log(filterdata)
+   })
+ 
