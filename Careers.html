@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Caerers | FitFast-"Fitness Helper" </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+    
+    <style>
+
+        *{
+            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+
+        .navbar{
+            
+            /* border: 1px solid; */
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+        }
+        .cate{
+            margin-left: -50px;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            /* border: 1px solid; */
+        }
+        .cate>p{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            color: rgb(33, 36, 50);
+            align-self: flex-end;
+        }
+        .cate>p:nth-child(7){
+            color: rgb(66, 150, 203);
+        }
+        .signin{
+            /* border: 1px solid; */
+            font-size: 11px;
+            font-weight: 400;
+            line-height: normal;
+            align-self: flex-end;
+        }
+        .signin>p+p{
+            /* border: 1px solid; */
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+        }
+        .search_cart{
+            width: 6%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-between;
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .nav.sticky{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: white;
+        }
+        /* ------------- */
+
+        .img{
+            margin-top: 100px;
+            width: 100%;
+        }
+
+
+        .imgText{
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            color:  rgb(145, 238, 218);
+            position: absolute;
+            top: 250px;
+            left: 200px;
+
+        }
+        .imgText>p{
+            font-size: 42px;
+            font-weight: 400;
+            line-height: 57.6px;
+            color:  white;
+        }
+
+        .centerText{
+          
+            width: 100%;
+            margin: auto;
+            font-size: 18px;
+            font-weight: 400;
+            line-height:32px;
+            color: rgb(78, 82, 98);
+            background-color: rgb(227, 235, 238);
+            
+        }
+        .centerText>div{
+           padding: 50px 0px 50px 0px;
+            width: 75%;
+            margin: auto;
+           
+            
+        }
+
+        .centerText>div>p:nth-child(1){
+            color: black;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: normal;
+        }
+       
+        .Content_Creator{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+        }
+        .Content_Creator>div:nth-child(1){
+            width: 45%;
+            align-self: center;
+            color: rgb(78, 82, 98);
+        }
+        .Content_Creator>div>p:nth-child(2){
+            color: black;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 5px;
+        }
+        .roles{
+            width: 100%;
+            background-color: rgb(240, 244, 246);
+            
+            color: rgb(49, 52, 67);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .roles>div{
+            width: 70%;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+        .roles>div>p{
+            color: rgb(33, 36, 50);
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            color: rgb(49, 52, 67);
+        }
+        .cards>div{
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            border-radius: 5px 0px 0px 5px;
+        }
+        
+        .cards>div>div:nth-child(1){
+            border-radius: 5px 0px 0px 5px;
+            width: 40%;
+            background-color: rgb(66, 150, 203);
+        }
+        .cards>div:nth-child(3)>div:nth-child(1),.cards>div:nth-child(4)>div:nth-child(1){
+            width: 40%;
+            background-color: rgb(38, 188, 53);
+        }
+        .cards>div>div:nth-child(2){
+           
+            padding:0px 5px 20px 10px;
+        }
+        /* -----------------footer--------------- */
+        .footer{
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+         
+            padding-bottom: 100px;
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .footer h7{
+           color: rgb(227, 235, 238);
+           display: block;
+           margin-bottom: 10px;
+           font-weight: 600;
+        }
+
+        .footer>div{
+            width: 70%;
+            padding-top: 60px;
+            margin: auto;
+         
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        .footerlogo{
+            width: 40%;
+           
+        }
+        .footerbottom{
+            font-size: 12px;
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: -20px;
+           
+        }
+        .footerbottom>div{
+            height: 50px;
+            width: 70%;
+            margin: auto;
+        }
+        .footerbottom>div>div{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        hr{
+           width: 70%;
+           margin: auto;
+           background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: .15px;
+        }
+      
+        .bottom{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+    </style>
+</head>
+<body>
+    
+<!------------------- navigation bar part ------------>
+    <div class="nav">
+        <div class="navbar">
+            <img width="16%" src="https://iili.io/HoTS9Zg.png" alt="logo">
+            <div class="cate">
+                <p>WORKOUTS</p>
+                <P>PROGRAM</P>
+                <P>HEALTHY LIVING</P>
+                <P>COMMUNITY</P>
+                <P>ABOUT</P>
+                <P>STORE</P>
+                <P>MEMBERSHIP</P>
+            </div>
+            <div class="signin">
+                <p>Hi! Sign In</p>
+                <p>MY FITNESS</p>
+            </div>
+            <div class="search_cart">
+                <i style="font-size:24px" class="fa">&#xf002;</i>
+                <i style="font-size:24px" class="fa">&#xf290;</i>
+            </div>
+           
+        </div>
+    </div>
+
+
+<!-- ----------------container----------------------- -->
+
+    <div class="container"> 
+        <img class="img" width="100%" src="https://i.postimg.cc/ZnTFZLhn/careers-hero-xs-2-X.jpg" alt="">
+        
+        <div class="imgText">
+     
+            <p>Come Join <br>
+                the FB Family.</p>
+        </div>
+
+        <div class="centerText">
+            <div>
+               <p>Our Strory</p>
+            <p>Fitness Blender was created by a husband and wife team of personal trainers who felt that there was a lack of reliable health and fitness information on the web. They were frustrated that too many people in the fitness industry were more focused on monetary gain or outward appearance than on good, achievable, long-term health. Now, more than 10 years later, Kelli and Daniel Segars, are still focused on their original goals and approach for the company:</p>
+           <ul>
+                <li>Make health and fitness attainable, affordable, and approachable—for as many people as possible.</li>
+                <li>Endorse eating unprocessed, whole foods, and working out for a strong, healthy body.</li>
+                <li>Encourage a personal, mindful approach to eating and exercise.</li>
+                <li>Promote the fact that overall wellness looks different for each individual.</li>
+              </ul>   
+            </div>
+           
+        </div>
+
+
+        <div class="Content_Creator">
+            <div>
+                <p>Become a Fitness Blender</p>
+                <p>Content Creator</p>
+                <p>We are working to expand the depth and diversity of the content we offer. From Workout Videos to Healthy Living articles and recipes, we want to be able to provide users with as much reliable health and fitness content as possible. If you're an experienced professional in the areas we have listed below, we'd like to hear from you.</p>
+            </div>
+
+            <div>
+                <img width="90%" src="https://cloudfront.fitnessblender.com/assets/img/careers/kandd.png" alt="">
+            </div>
+        </div>
+
+        <div class="roles">
+            <div>
+                <p>Open Content Roles</p>
+                <div class="cards">
+                    <div >
+                        <div><img src="" alt=""></div>
+                        <div>   <p>Certified Personal Trainer</p>
+                        <p>Join our CPTs in creating workout videos to enhance our overall library, and diversity of workout options.</p>
+                    </div>
+                     </div>
+
+                    <div>
+                        
+                        <div><img src="" alt=""></div>
+                        <div><p>Yoga Instructor</p>
+                        <p>Are you a fitness professional? Join the content team to bring new types of fitness videos to our growing library and audience.</p>
+                    </div>
+                        </div>
+                    <div>
+                        
+                        <div><img src="" alt=""></div>
+                        <div><p>Professional Recipe Developer</p>
+                        <p>Join our content team, working closely with RDNs/LDNs to create easy-to-understand, easy-to-use healthy recipe content.</p></div>
+                        
+                    </div>
+                    <div>
+                        
+                        <div><img src="" alt=""></div>
+                        <div>   <p>Registered Dietitian Nutritionist</p>
+                        <p>Join the content team to help create easy-to-understand nutrition and healthy eating content, including recipe-based meal plans.</p>
+                    </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    
+<!------------------- footer part --------------------------->
+    <div class="footer">
+        <div>
+            <div class="footerlogo">
+                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+    
+            <div>
+                <h7>WORKOUTS</h7>   
+                <p> WORKOUT VIDEOS</p> 
+                <p>CUSTOM WORKOUTS</p>  
+                <h7> PROGRAMS</h7>  
+                <p>WORKOUT PROGRAMS</p>  
+                <p>MEAL PLANS</p>   
+                <p>PILOT PROGRAMS</p>   
+                <p> ROUTINES</p>   
+            </div>
+    
+            <div>
+                <h7>HEALTHY LIVING</h7>
+                <p>FITNESS</p>
+                <p>HEALTH</p>
+                <p>NUTRITION</p>
+                <p>HEALTHY RECIPES</p>
+                <p>EXPERTS</p>
+            </div>
+    
+            <div>
+                <h7>ABOUT</h7>
+                <p>CAREERS</p> 
+                <p>TUTORIALS</p>
+                <p>OUR TEAM</p>
+                <p>B2B OPTIONS</p> 
+            </div>
+    
+            <div>
+                <h7>MEMBERSHIP</h7>
+                <h7>FB PLUS</h7>
+                <h7>COMMUNITY</h7>
+                <h7>BLOG</h7>
+                <h7>CONTACT US</h7>
+                <h7>FAQ</h7>
+                <h7>STORE</h7>
+            </div>
+            
+        </div>
+       
+    </div>
+    <div class="footerbottom"> 
+        <hr>
+        <div>
+          <div>
+            <div>
+                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+            </div>
+       
+            <div class="bottom"> 
+                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+                </a>
+                
+                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+                </a>
+                
+                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+                </a>
+                
+            </div> 
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    // <!------------------- navigation bar code ------------>
+        let navbar=document.querySelector(".nav")
+        
+        window.onscroll=function(){
+            navbar.classList.add("sticky");
+        }
+    // <!------------------- navigation bar code ------------>
+    
+    
+    
+    </script>
