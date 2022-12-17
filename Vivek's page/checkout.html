@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+        <div class="container">
+            <form id="form">
+               <h1>Checkout</h1>
+                <input type="text" id="name" placeholder="enter name" class="box">
+                <input type="number" name="" id="mobil" class="box" placeholder="enter your mobile number">
+                <input type="text" id="add" placeholder="enter email" class="box" placeholder="enter your address">
+                <a href="payment.html" id="pay">Click here to pay</a>
+                <input type="submit" value="submit" name="" id="" class="submit">
+            </form>
+        </div>
+</body>
+</html>
+<script>
+    let form=document.querySelector("#form");
+    let lsData=[];
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let obj={
+            name:form.name.value,
+            number:form.mobil.value,
+            add:form.add.value,
+        }
+        if(obj.name==""||obj.number==""||obj.add==""){
+            alert("please fill the details")
+        }
+        else{
+            lsData.push(obj);
+            localStorage.setItem("check",JSON.stringify(lsData));
+            window.location.href="payment.html"
+        }
+    })
+</script>

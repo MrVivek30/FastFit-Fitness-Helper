@@ -73,6 +73,22 @@
       "number": "1896765",
       "password": "1234",
       "id": 9
+    },
+    {
+      "username": "Mr_Vivek",
+      "lastname": "chaudhary",
+      "email": "vivekchaudhary538@gmail.com",
+      "number": "7003322903",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "username": "alokraja",
+      "lastname": "rai",
+      "email": "abhinathverma2050@gmail.com",
+      "number": "7003322903",
+      "password": "12345",
+      "id": 11
     }
   ],
   "gym": [
