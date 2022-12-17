@@ -115,7 +115,7 @@ function display(data){
             carts.push(elem)
             localStorage.setItem("cart",JSON.stringify(carts))
             alert("product added sucessfully")
-            window.location.href="cart.html"
+            // window.location.href="cart.html"
         })
         div.append(image,category,title,maindiv);
         document.querySelector(".post-list").append(div)

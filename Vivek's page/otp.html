@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 20%;
+            margin: auto;
+            text-align: center;
+            background-color: black;
+            padding: 20px 30px;
+            color: white;
+            height: 30vh;
+            align-items: center;
+        }
+
+        input {
+            margin: 10px 0px;
+            padding: 20px 0px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        button {
+            margin: 10px 0px;
+            padding: 5px 0px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>OTP </h1>
+        <input type="text" id="otp" placeholder="enter OTP" class="box">
+        <button id="btn" class="submit">submit</button>
+    </div>
+</body>
+
+</html>
+<script>
+    let user = document.querySelector("#otp");
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (user.value == "1234") {
+            alert("payment successful")
+            window.location.href="deliverytask.html"
+        }
+        else {
+            alert("please enter correct otp")
+        }
+    })
+</script>
