@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Fastfit</title>
+    <link rel="stylesheet" href="/Recipes.css">
+</head>
+<body>
+    <div id="head">
+        <p class="heding">Recipes</p>
+        <p class="description">Healthy living content written by physical therapists, registered dietitians and doctors.</p>
+    </div>
+    <div>
+        <hr class="line">
+        <!-- select tag -->
+          <div style="display: flex; padding-left: 90px;">
+          <div class="select">
+            <select name="sortByAuthors" id="sortByAuthors">
+               <option value="author" >AUTHORS</option>
+               <option value="Tasha">Tasha</option>
+               <option value="Haley">Haley</option>
+               <option value="Kayla">Kayla</option>
+               <option value="Amanda">Amanda</option>
+               <option value="Candice">Candice</option>
+            </select>
+         </div>
+          <div class="select">
+            <select name="format" id="format">
+               <option selected disabled>FILTERS</option>
+               <option value="pdf">PDF</option>
+               <option value="txt">txt</option>
+               <option value="epub">ePub</option>
+               <option value="fb2">fb2</option>
+               <option value="mobi">mobi</option>
+            </select>
+         </div>
+        </div>
+         <!-- show recipes -->
+         <div class="container">
+            <div class="cards_container">     
+            </div>
+            <div id="pagination_wrapper" class="pagination_wrapper"></div>
+         </div>
+</body>
+</html>
+<script src="./Recipes.js"></script>
