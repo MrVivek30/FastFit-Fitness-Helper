@@ -7,71 +7,277 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
     <title>FastFit-"Fitness Helper"</title>
 
     <style>
     /* --------------------------------navbar css start---------------------------------------- */
-        *{
-            font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        }
-
-       
-        .navbar{
-            
-            /* border: 1px solid; */
-            width: 75%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            height: 100px;
-        }
-        .cate{
-            margin-left: -50px;
-            display: flex;
-            justify-content: space-between;
-            width: 60%;
-            /* border: 1px solid; */
-        }
-        .cate>p{
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 16px;
-            color: rgb(33, 36, 50);
-            align-self: flex-end;
-        }
-        .cate>p:nth-child(7){
-            color: rgb(66, 150, 203);
-        }
-        .signin{
-            /* border: 1px solid; */
-            font-size: 11px;
-            font-weight: 400;
-            line-height: normal;
-            align-self: flex-end;
-        }
-        .signin>p+p{
-            /* border: 1px solid; */
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 16px;
-        }
-        .search_cart{
-            width: 6%;
-            /* border: 1px solid; */
-            display: flex;
-            justify-content: space-between;
-            align-self: flex-end;
-            margin-bottom: 10px;
-        }
-
-        .nav.sticky{
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background-color: white;
-        }
+          /* nav */
+    * {
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+  #nav {
+    padding-top: 11px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    position: relative;
+    
+  }
+  #nav-mega > li {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    color: #212432;
+  }
+  
+  #nav-mega > li:hover {
+    border-bottom: 4px solid #4296cb;
+    height: 71px;
+  }
+  
+  #nav-mega > li > span {
+    color: #4296cb;
+  }
+  
+  #logo {
+    width: 15%;
+  }
+  #logo > img {
+    width: 100%;
+    height: 80px;
+    object-fit: scale-down;
+  }
+  #nav-mega {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-down {
+    position: absolute;
+    width: 100%;
+    background-color: #32374d;
+    right: 0;
+    top: 90px;
+    height: 150px;
+  
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-down > div {
+    width: 12%;
+    margin: auto 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+  }
+  
+  .menu-down > div:hover {
+    background-color: #212432;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu-down > div > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-down > div p {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .menu-down > div span {
+    font-size: 60px;
+    color: white;
+  }
+  
+  #nav-mega > li:hover .menu-down {
+    display: flex;
+  }
+  
+  #profile {
+    width: 15%;
+    position: relative;
+  }
+  
+  #profile > li > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  #profile > li > div:nth-child(2) * {
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  #profile > li > div:nth-child(2) {
+    height: 350px;
+    width: 250px;
+  }
+  
+  #menu-util {
+    width: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  #userAvatar > span {
+    font-size: 50px;
+  }
+  
+  .first {
+    display: flex;
+  }
+  
+  .btn {
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover{
+    cursor: pointer;
+  }
+  
+  .menu-down-profile {
+    position: absolute;
+    width: 100%;
+    background-color: #212432;
+    display: none;
+    padding: 10px;
+  }
+  #profile > li > div:nth-child(1) {
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  #profile > li:hover .menu-down-profile {
+    display: block;
+    right: 0px;
+  }
+  #hamburger > span {
+    font-size: 45px;
+  }
+  #hamburger {
+    display: none;
+    width: 20%;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #hamburger {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      align-items: center;
+    }
+    #hamburger > li {
+      height: 200px;
+      display: flex;
+      align-items: center;
+    }
+    #hamburger > li > span {
+      font-size: 40px;
+      cursor: pointer;
+    }
+    #hamburger > li > div {
+      position: fixed;
+      bottom: 0;
+      min-height: 100px;
+      overflow-y: scroll;
+      top: 97px;
+      background-color: #212432;
+      padding: 0px 10px;
+  
+      transition: 0.5s;
+      right: -70%;
+      cursor: pointer;
+    }
+  
+    #hamburger > li > div li {
+      text-transform: uppercase;
+      padding: 5px;
+      font-size: 20px;
+    }
+    #hamburger > li > div > ul {
+      border-bottom: 1px solid #32374d;
+      padding: 10px 10px;
+    }
+  
+    #hamburger > li > div > ul li a {
+      color: #32374d;
+    }
+    #hamburger > li > div > ul:nth-child(1) {
+      padding-top: 50px;
+    }
+  
+    #hamburger > li > div > ul > li:nth-child(1) > a {
+      color: white;
+    }
+    #hamburger > li > div > ul:nth-child(1) > li > a {
+      color: #4296cb;
+    }
+    #profile {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #logo {
+      width: 40%;
+    }
+    /* #hamburger > li:hover > div {
+      
+      right: 0px;
+      cursor: pointer;
+    } */
+    .menu-down-profile {
+      width: 60%;
+    }
+    #nav-mega {
+      display: none;
+    }
+    #menu-util {
+      display: none;
+    }
+    /* nav {
+      align-items: flex-start;
+     
+    } */
+  }
         
 /* --------------------------------navbar css end---------------------------------------- */
         text{
@@ -90,7 +296,7 @@
             line-height: normal;
         }
         .top{
-            margin-top: 120px;
+            margin-top: 10px;
             width: 100%;
             height: 525px;
             background: rgb(20,181,227);
@@ -284,29 +490,287 @@
 <body>
 
     <!------------------- navigation bar part ------------>
-    <div class="nav">
-        <div class="navbar">
-            <img width="16%" src="https://iili.io/HoTS9Zg.png" alt="logo">
-            <div class="cate">
-                <p>WORKOUTS</p>
-                <P>PROGRAM</P>
-                <P>HEALTHY LIVING</P>
-                <P>COMMUNITY</P>
-                <P>ABOUT</P>
-                <P>STORE</P>
-                <P>MEMBERSHIP</P>
-            </div>
-            <div class="signin">
-                <p>Hi! Sign In</p>
-                <p>MY FITNESS</p>
-            </div>
-            <div class="search_cart">
-                <i style="font-size:24px" class="fa">&#xf002;</i>
-                <i style="font-size:24px" class="fa">&#xf290;</i>
-            </div>
-           
+<!------------------- navigation bar part ------------>
+  <!-- Nav Bar -->
+
+  <nav>
+    <div id="nav">
+
+        <div id="logo">
+            <img width="80%"  src="../workout-videos/fitnesSHELPER.png" alt="">
+        </div>
+        <div id="nav-mega">
+            <li><a href="WORKOUT.HTML">WORKOUTS</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./workout-videos/Workout-Videos.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>WORKOUT VIDEOS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./workout-videos/custom_Workout.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>CUSTOM WORKOUTS</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </li>
+            <li><a href="./Vivek's page/programs.html">PROGRAMS</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./Vivek's page/programs.html">
+
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>WORKOUT PROGRAMS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/meal.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>MEAL PLANS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/pilot.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>PILOT PROGRAMS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/routine.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>ROUTINES</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </li>
+            <li><a href="HealthLiving.html">HEALTHY LIVING</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="ExpertArticles.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>EXPERT ARTICLES</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Recipes.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>HEALTHY RECIPES</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="wellness.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>WELLNESS VIDEOS</p>
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </li>
+            <li><a href="./community/community.html">COMMUNITY</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./community/blog.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>BLOG</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./community/whatsNew.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>WHAT'S NEW</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </li>
+            <li><a href="About.html">ABOUT</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="Careers.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>CAREERS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="About.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>TUTORIALS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="About.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>OUR TEAM</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </li>
+            <li><a href="Store.html">STORE</a> </li>
+            <li><a href="Membership.html">MEMBERSHIP</a> </li>
+
+        </div>
+        <div id="profile">
+            <li>
+
+                <div>
+                    <div id="userAvatar">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+
+                </div>
+                <div class="menu-down-profile">
+                    <h1>JOIN FOR FREE!</h1>
+                    <p>
+                        Join for free and start building and tracking your workouts, get support from other Fitness
+                        Blender members and more!
+
+                    </p>
+                    <div id="join" class="btn" style="background-color: #4296cb;"><a href="./Vivek's page/usersingup.html">JOIN</a> </div>
+                    <div id="sign-in" style="color: #212432; background-color: white;" class="btn"><a href="./Vivek's page/userlogin.js">Sign In</a></div>
+                </div>
+
+
+            </li>
+        </div>
+
+
+        <div id="hamburger">
+
+            <li>
+
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <div class="menu-down-media">
+                    <ul>
+                        <li><a href="Membership.html">membership</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/WORKOUT.HTML">Workouts</a></li>
+                        <li><a href="/workout-videos/Workout-Videos.html">workout videos</a></li>
+                        <li><a href="/workout-videos/custom_Workout.html">custom workouts</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./Vivek's page/programs.html">Programs</a></li>
+                        <li><a href="./Vivek's page/programs.html">workout programs</a></li>
+                        <li><a href="./Vivek's page/meal.html">meal plans</a></li>
+                        <li><a href="./Vivek's page/pilot.html">pilot programs</a></li>
+                        <li><a href="./Vivek's page/routine.html">routines</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="HealthLiving.html">healthy living</a></li>
+                        <li><a href="ExpertArticles.html">Articles</a></li>
+                        <li><a href="Recipes.html">Healthy recipes</a></li>
+                        <li><a href="wellness.html">wellness videos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./community/community.html">community</a></li>
+                        <li><a href="./community/blog.html">blog</a></li>
+                        <li><a href="./community/whatsNew.html">what's new</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="About.html">about</a></li>
+                        <li><a href="Careers.html">careers</a></li>
+                        <li><a href="About.html">tutorials</a></li>
+                        <li><a href="About.html">our team</a></li>
+
+                    </ul>
+                    <ul>
+                        <li><a href="Store.html">store</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </div>
+
+        <div id="menu-util">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <a href="./Vivek's page/cart.html"><span class="material-symbols-outlined">
+                shopping_bag
+            </span></a>
         </div>
     </div>
+
+</nav> 
 
 
 
@@ -533,6 +997,28 @@
     }
 // <!------------------- navigation bar code ------------>
 
+let hamburger = document.querySelector('#hamburger>li>span')
 
+let hamburgerDown = document.querySelector('#hamburger>li>div')
+let hamcount = 0
+hamburger.addEventListener('click', () => {
+    if (hamcount == 0) {
+
+        hamburger.classList.add = 'material-symbols-sharp'
+        hamburger.classList.remove = 'material-symbols-outlined'
+        hamburger.textContent = 'close'
+        hamburgerDown.style.right = '0px'
+        hamcount++
+    } else {
+
+
+        hamburger.textContent = 'menu'
+        hamburger.classList.add = 'material-symbols-outlined'
+        hamburger.classList.remove = 'material-symbols-sharp'
+        hamcount = 0
+        hamburgerDown.style.right = '-70%'
+    }
+
+})
 
 </script>

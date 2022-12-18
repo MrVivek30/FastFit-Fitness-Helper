@@ -9,33 +9,431 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="stylesheet" href="cart.css">
+
 </head>
 
 <body>
-    <div class="nav">
-        <a href="../index.html">
-            <h1 class="rrr">FastFit.com</h1>
-        </a>
+<!------------------- navigation bar part ------------>
+<!------------------- navigation bar part ------------>
+  <!-- Nav Bar -->
 
-        <a href="../index.html"><i style="font-size:80px;" class="fa-solid fa-house"></i>
-        </a>
-        <!-- <a href="meal.html"><img width="80px" src="https://img.icons8.com/ios-glyphs/2x/unpacking.png" alt=""></a> -->
-        <a href="checkout.html"><img id="hhh"
-                src="data:image/png;base64,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"
-                alt="">
-    </div> </a>
+  <nav>
+    <div id="nav">
 
-    <div class="do">
-        <h1>Your Total cart Item is: <span id="itemx">0</span></h1>
-        <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+        <div id="logo">
+            <a href="../index.html"><img width="80%" src="../workout-videos/fitnesSHELPER.png" alt=""></a>   
+        </div>
+        <div id="nav-mega">
+            <li><a href="WORKOUT.HTML">WORKOUTS</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./workout-videos/Workout-Videos.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>WORKOUT VIDEOS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./workout-videos/custom_Workout.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>CUSTOM WORKOUTS</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </li>
+            <li><a href="./Vivek's page/programs.html">PROGRAMS</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./Vivek's page/programs.html">
+
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>WORKOUT PROGRAMS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/meal.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>MEAL PLANS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/pilot.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>PILOT PROGRAMS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./Vivek's page/routine.html">
+                            <span class="material-symbols-outlined">
+                                description
+                            </span>
+                            <p>ROUTINES</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </li>
+            <li><a href="HealthLiving.html">HEALTHY LIVING</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="ExpertArticles.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>EXPERT ARTICLES</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Recipes.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>HEALTHY RECIPES</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="wellness.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>WELLNESS VIDEOS</p>
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </li>
+            <li><a href="./community/community.html">COMMUNITY</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="./community/blog.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>BLOG</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./community/whatsNew.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>WHAT'S NEW</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </li>
+            <li><a href="About.html">ABOUT</a><span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+                <div class="menu-down">
+                    <div>
+                        <a href="Careers.html">
+
+                            <span class="material-symbols-outlined">
+                                sports_gymnastics
+                            </span>
+                            <p>CAREERS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="About.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>TUTORIALS</p>
+
+                        </a>
+                    </div>
+                    <div>
+                        <a href="About.html">
+                            <span class="material-symbols-outlined">
+                                functions
+                            </span>
+                            <p>OUR TEAM</p>
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </li>
+            <li><a href="Store.html">STORE</a> </li>
+            <li><a href="Membership.html">MEMBERSHIP</a> </li>
+
+        </div>
+        <div id="profile">
+            <li>
+
+                <div>
+                    <div id="userAvatar">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+
+                </div>
+                <div class="menu-down-profile">
+                    <h1>JOIN FOR FREE!</h1>
+                    <p>
+                        Join for free and start building and tracking your workouts, get support from other Fitness
+                        Blender members and more!
+
+                    </p>
+                    <div id="join" class="btn" style="background-color: #4296cb;"><a href="./Vivek's page/usersingup.html">JOIN</a> </div>
+                    <div id="sign-in" style="color: #212432; background-color: white;" class="btn"><a href="./Vivek's page/userlogin.js">Sign In</a></div>
+                </div>
+
+
+            </li>
+        </div>
+
+
+        <div id="hamburger">
+
+            <li>
+
+
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <div class="menu-down-media">
+                    <ul>
+                        <li><a href="Membership.html">membership</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/WORKOUT.HTML">Workouts</a></li>
+                        <li><a href="/workout-videos/Workout-Videos.html">workout videos</a></li>
+                        <li><a href="/workout-videos/custom_Workout.html">custom workouts</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./Vivek's page/programs.html">Programs</a></li>
+                        <li><a href="./Vivek's page/programs.html">workout programs</a></li>
+                        <li><a href="./Vivek's page/meal.html">meal plans</a></li>
+                        <li><a href="./Vivek's page/pilot.html">pilot programs</a></li>
+                        <li><a href="./Vivek's page/routine.html">routines</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="HealthLiving.html">healthy living</a></li>
+                        <li><a href="ExpertArticles.html">Articles</a></li>
+                        <li><a href="Recipes.html">Healthy recipes</a></li>
+                        <li><a href="wellness.html">wellness videos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./community/community.html">community</a></li>
+                        <li><a href="./community/blog.html">blog</a></li>
+                        <li><a href="./community/whatsNew.html">what's new</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="About.html">about</a></li>
+                        <li><a href="Careers.html">careers</a></li>
+                        <li><a href="About.html">tutorials</a></li>
+                        <li><a href="About.html">our team</a></li>
+
+                    </ul>
+                    <ul>
+                        <li><a href="Store.html">store</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </div>
+
+        <div id="menu-util">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <a href="./Vivek's page/cart.html"><span class="material-symbols-outlined">
+                shopping_bag
+            </span></a>
+        </div>
     </div>
 
-    <div id="cart-container">
-        <!-- Here Append All the cart Products  -->
+</nav> 
+
+       <!-- mid part -->
+       <div class="middle">
+        <div class="middletop">
+             <h3>Shopping Bag</h3> 
+            
+           
+            </div>
+            <div class="toptag">
+                <div>
+                    <p>Item</p>
+                </div>
+                <div>
+               <p>Remove</p> <p>Price</p>	</div>
+                </div>
+            
+            <hr>
+            <div class="container"></div>
+        </div>
 
 
+        <div class="down"> 
+ 
+    <div class="down2">
+        <div>
+       
+        <p>Order Total:</p>
+        </div>
+        <div>
+          <b><p id="total">0</p></b>  
+           
+        </div>
     </div>
+    <br><hr>
+    <div class="pctc">
+       <a href="signIn.html"><button class="pc">PROCEED TO CHECKOUT</button></a> 
+    </div> 
+    <br>
+    
+</div>
+    </div>
+
+
+   
+<!------------------- footer part --------------------------->
+<div class="footer">
+    <div>
+        <div class="footerlogo">
+            <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+            <p>WORKOUT COMPLETE™</p>
+        </div>
+
+        <div>
+            <h7>WORKOUTS</h7>   
+            <p> WORKOUT VIDEOS</p> 
+            <p>CUSTOM WORKOUTS</p>  
+            <h7> PROGRAMS</h7>  
+            <p>WORKOUT PROGRAMS</p>  
+            <p>MEAL PLANS</p>   
+            <p>PILOT PROGRAMS</p>   
+            <p> ROUTINES</p>   
+        </div>
+
+        <div>
+            <h7>HEALTHY LIVING</h7>
+            <p>FITNESS</p>
+            <p>HEALTH</p>
+            <p>NUTRITION</p>
+            <p>HEALTHY RECIPES</p>
+            <p>EXPERTS</p>
+        </div>
+
+        <div>
+            <h7>ABOUT</h7>
+            <p>CAREERS</p> 
+            <p>TUTORIALS</p>
+            <p>OUR TEAM</p>
+            <p>B2B OPTIONS</p> 
+        </div>
+
+        <div>
+            <h7>MEMBERSHIP</h7>
+            <h7>FB PLUS</h7>
+            <h7>COMMUNITY</h7>
+            <h7>BLOG</h7>
+            <h7>CONTACT US</h7>
+            <h7>FAQ</h7>
+            <h7>STORE</h7>
+        </div>
+        
+    </div>
+   
+</div>
+<div class="footerbottom"> 
+    <hr>
+    <div>
+      <div>
+        <div>
+            Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+        </div>
+   
+        <div class="bottom"> 
+            <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+            </a>
+            <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+            <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+            </a>
+            
+            <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+            </a>
+            
+            <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+            </a>
+            
+        </div> 
+    </div>
+    
+</div>
+
+
+
+
+
+
 
 </body>
 <script src="cart.js">
