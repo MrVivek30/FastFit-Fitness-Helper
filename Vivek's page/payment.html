@@ -5,20 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payment</title>
-    <link rel="stylesheet" href="common.css">
+    <title>Shopping Checkout | Fitfast</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+         }
+         .head{
+            height: auto;
+         }
+         .heading{
+            font-size: 50px;
+            margin-left: 100px;
+         }
+         .main{
+            height: auto;
+            background-color: rgb(240, 244, 246);
+            padding-top: 40px;
+            padding-bottom: 50px;
+         }
+         .container{
+            width: 85%;
+            height: auto;
+            background-color: white;
+            margin: auto;
+            padding-top: 1px;
+            padding-bottom: 50px;
+         }
+         .billing_info{
+            font-size: 25px;
+            font-weight: 550;
+            margin-left: 40px;
+            margin-bottom: 20px;
+         }
+         .line{
+            background: rgb(235, 235, 235);
+            border: none;
+            height: 1px;
+            margin-bottom: 30px;
+        }
+        input{
+            display: block;
+            width: 50%;
+            margin: auto;
+            height: 40px;
+            margin-bottom: 23px;
+            padding-left: 15px;
+            font-size: 17px;
+            transition: 0.5s;
+            outline: none;
+            margin-top: 6px;
+            border: 1px solid rgb(235, 235, 235);
+        }
+        input:focus {
+            border: 3px solid rgb(35, 141, 193);
+        }
+        label{
+            margin-left: 312px;
+            font-size: 18px;
+            color: rgb(137, 137, 137);
+        }
+        #cancel{
+           margin-left: 310px;
+           font-size: 19px;
+           text-decoration: none;
+           color: rgb(35, 141, 193);
+        }
+        #pay{
+            margin-left: 388px;
+            font-size: 19px;
+            font-weight: 550;
+            text-decoration: none;
+            color:white;
+            padding: 20px 40px;
+            background-color: rgb(35, 141, 193) ;
+            border-radius: 5px;
+        }
+        #Code{
+            margin-bottom: 40px;
+        }
+        .last{
+            padding: 7px;
+            width: 65%;
+            margin: auto;
+            margin-top: 25px;
+            background-color: rgb(227, 235, 238);
+        }
+        .last p{
+           font-size: 18px;
+           margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <form id="form">
-            <h1>Payment</h1>
-            <input type="name" id="name" placeholder="Enter name" class="box">
-            <input type="number" name="" id="card" placeholder="enter your card number" class="box">
-            <input type="number" id="cvv" placeholder="enter your cvv" class="box">
-            <input type="date" id="expiry" value="09/23" class="box">
-            <input type="submit" value="submit" name="" id="" class="submit">
-        </form>
+    <div class="head">
+        <p class="heading">Checkout</p>
+    </div>
+ <!--  -->
+      
+     <div class="main">
+        <div class="container">
+            <p class="billing_info">Payment Information</p>
+            <hr class="line">
+            <form id="form">
+                <label for="ccn">Card Number</label>
+                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                <label for="inputExpDate">Expiration Date (MM/YY)</label>
+                <input type="text" id="inputExpDate" placeholder="MM / YY"  maxlength='7'>
+                <label for="Code">CVV (3 digits)</label>
+                <input id="Code" type="password" class="cvv" placeholder="CVV" maxlength='3'>
+                <a href="/index.html" id="cancel">Cancel</a>
+                <a href="otp.html" id="pay">PLACE ORDER</a>
+            </form>
+        </div>
+         <div class="last">
+            <p>By purchasing an FB Plus Pass, you agree to Fitness Blender’s <a href="" style="text-decoration: none; color:rgb(35, 141, 193) ;">FB Plus Pass Terms and Conditions</a>, including no refunds.</p>
+         </div>
     </div>
 </body>
 

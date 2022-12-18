@@ -4,21 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>signup</title>
+    <title>Admin | Signup</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            /* background-color: rgb(140, 140, 140); */
+            background-color: rgb(156, 156, 156);
+        }
+        input{
+            display: block;
+            width: 70%;
+            margin: auto;
+            height: 35px;
+            margin-bottom: 10px;
+            border:1px solid rgb(204, 204, 204);
+            padding-left: 20px;
+        }
+        #container{
+           margin: auto;
+           width: 600px;  
+           height: auto;  
+           margin-top: 70px;    
+        }
+        .signup{
+          margin: auto;
+          font-size: 45px;
+          font-family: sans-serif;
+          margin-left: 120px;
+          margin-bottom: 40px;
+        }
+        .innerbox{
+            height: 45px;
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .facebook{
+            height: auto;
+            width: 47%;
+            border-radius: 8px;
+            background-color: rgb(25, 118, 210);
+            display: flex;
+        }
+        .google{
+            height: auto;
+            width: 47%;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(221, 75, 57);
+            font-weight: 550;
+            display: flex;
+        }
+        .logo{
+            width: 16%;
+            margin-left: 10px;
+        }
+        .text{
+            color: white;
+            font-size: 15px;
+            font-weight: 550;
+           margin-left: 65px;
+        }
+        .submit{
+            height: 45px;
+            background-color:rgb(35, 141, 193) ;
+            color: white;
+           font-weight: 550;
+           font-size: 15px;
+           margin-top: 20px;
+        }
+        .submit:hover{
+            background-color: rgb(87, 155, 189);
+        }
+        .line{
+            background: rgb(235, 235, 235);
+            border: none;
+            height: 1px;
+        }
+        table{
+            margin-bottom: 35px;
+        }
+        .signin_text{
+            color:black ;
+            margin-left:270px;
+        }
+    </style>
     <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
     <div id="container">
         <form id="form">
-            <h1>Sign up</h1>
+            <p class="signup">Sign up As Admin</p>
+            <div class="innerbox">
+                <div class="facebook"><img class="logo" src="https://i.ibb.co/17Xz4J1/facebook.png" alt=""><p class="text">FACEBOOK</p></div>
+                <div class="google"><img class="logo" src="https://i.ibb.co/T12MnfS/google-plus.png" alt=""><p class="text">GOOGLE</p></div>
+            </div>
+            <table><tr>
+                <td style="width:49%"><hr class="line"></td>
+                <td style="vertical-align:middle; text-align: center; font-size: 13px; color:rgb(204, 204, 204) ;">OR</td>
+                <td style="width:49%"><hr class="line"></td>
+                </tr></table>
             <input type="text" id="username" placeholder="enter your username">
             <input type="text" id="firstname" placeholder="enter your firstname">
             <input type="text" id="lastname" placeholder="enter your lastname">
             <input type="email" id="email" placeholder="Enter email" class="box">
             <input type="number" name="" id="mobil" placeholder="enter your mobile number" class="box">
             <input type="password" id="pass" placeholder="enter your password" class="box">
-            <input type="submit" value="submit" name="" id="" class="submit">
-            <p>Dont't have an account <a href="adminlogin.html">signup</a> </p>
+            <input type="submit" value="Sign up As Admin" name="" id="" class="submit">
+            <p class="signin_text">Already have an account? <a href="adminlogin.html" style="color: rgb(198, 236, 254);">sign in</a> </p>
         </form>
         
     </div>
