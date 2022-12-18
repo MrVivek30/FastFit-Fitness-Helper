@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/custom_workout.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+    <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#headImg{
+    margin-top: 6%;
+    background-image: url("https://cloudfront.fitnessblender.com/assets/img/fbplus/fingerprint.jpg");
+    height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid red;
+}
+
+#container{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items:center ;
+}
+
+#head-i{
+    margin-top: 10%;
+    height: 60%;
+    width: 40%;
+    color: #fff;
+}
+
+#head-i>h1{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+#head-i .fbplus{
+    text-align: center;
+    letter-spacing: -.1rem;
+    font-weight: bold;
+    padding: 1.5rem 0 1rem 0;
+}
+#head-i .fb{
+    font-size: 3.5rem;
+    color: rgba(255,255,255,0.5);
+}
+#head-i .plus{
+    font-size: 3.5rem;
+}
+#head-i .aa{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    background: #3cdbb8;
+    vertical-align:top;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+
+#head-i .btnplus{
+    font-size: 1.6rem;
+    margin: 0rem 0rem 1.6rem;
+    padding: 2.2rem 3.8rem 2rem;
+    letter-spacing: 1px;
+}
+
+
+#btnplus{
+    width: 45%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: .6rem;
+    margin-top: 6%;
+    padding: 1.3rem;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    
+}
+
+#btnplus>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#walkthrough{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+    box-sizing: border-box;
+}
+
+#walkthrough div{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    color: #416ca8;
+}
+
+#walkthrough>div:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+#walkthrough h3{
+    margin: 8%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sec{
+    width: 100%;
+    display: flex;
+}
+
+.sec .pic{
+    width: 50%;
+    text-align: center;
+}
+.sec .pic>img{
+    width: 100%;
+}
+.sec .detail{
+    width: 50%;
+}
+
+.sec .detail>h2{
+    line-height: 34px;
+    letter-spacing: -0.3px;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 4%;
+}
+
+.sec .detail>p{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+}
+
+
+/* footer */
+
+.footer{
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: 100px;
+            padding-bottom: 100px;
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .footer h7{
+           color: rgb(227, 235, 238);
+           display: block;
+           margin-bottom: 10px;
+           font-weight: 600;
+        }
+
+        .footer>div{
+            width: 70%;
+            padding-top: 60px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footerlogo{
+            width: 40%;
+
+        }
+        .footerbottom{
+            font-size: 12px;
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: -20px;
+
+        }
+        .footerbottom>div{
+            height: 50px;
+            width: 70%;
+            margin: auto;
+        }
+        .footerbottom>div>div{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr{
+           width: 70%;
+           margin: auto;
+           background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: .15px;
+        }
+
+        .bottom{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* nav */
+        * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+  #nav {
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    position: relative;
+    
+  }
+  #nav-mega > li {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    color: #212432;
+  }
+  
+  #nav-mega > li:hover {
+    border-bottom: 4px solid #4296cb;
+    height: 71px;
+  }
+  
+  #nav-mega > li > span {
+    color: #4296cb;
+  }
+  
+  #logo {
+    width: 15%;
+  }
+  #logo > img {
+    width: 100%;
+    height: 80px;
+    object-fit: scale-down;
+  }
+  #nav-mega {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-down {
+    position: absolute;
+    width: 100%;
+    background-color: #32374d;
+    right: 0;
+    top: 97px;
+    height: 150px;
+  
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-down > div {
+    width: 12%;
+    margin: auto 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+  }
+  
+  .menu-down > div:hover {
+    background-color: #212432;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu-down > div > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-down > div p {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .menu-down > div span {
+    font-size: 60px;
+    color: white;
+  }
+  
+  #nav-mega > li:hover .menu-down {
+    display: flex;
+  }
+  
+  #profile {
+    width: 15%;
+    position: relative;
+  }
+  
+  #profile > li > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  #profile > li > div:nth-child(2) * {
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  #profile > li > div:nth-child(2) {
+    height: 350px;
+    width: 250px;
+  }
+  
+  #menu-util {
+    width: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  #userAvatar > span {
+    font-size: 50px;
+  }
+  
+  .first {
+    display: flex;
+  }
+  
+  .btn {
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover{
+    cursor: pointer;
+  }
+  
+  .menu-down-profile {
+    position: absolute;
+    width: 100%;
+    background-color: #212432;
+    display: none;
+    padding: 10px;
+  }
+  #profile > li > div:nth-child(1) {
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  #profile > li:hover .menu-down-profile {
+    display: block;
+    right: 0px;
+  }
+  #hamburger > span {
+    font-size: 45px;
+  }
+  #hamburger {
+    display: none;
+    width: 20%;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #hamburger {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      align-items: center;
+    }
+    #hamburger > li {
+      height: 200px;
+      display: flex;
+      align-items: center;
+    }
+    #hamburger > li > span {
+      font-size: 40px;
+      cursor: pointer;
+    }
+    #hamburger > li > div {
+      position: fixed;
+      bottom: 0;
+      min-height: 100px;
+      overflow-y: scroll;
+      top: 97px;
+      background-color: #212432;
+      padding: 0px 10px;
+  
+      transition: 0.5s;
+      right: -70%;
+      cursor: pointer;
+    }
+  
+    #hamburger > li > div li {
+      text-transform: uppercase;
+      padding: 5px;
+      font-size: 20px;
+    }
+    #hamburger > li > div > ul {
+      border-bottom: 1px solid #32374d;
+      padding: 10px 10px;
+    }
+  
+    #hamburger > li > div > ul li a {
+      color: #32374d;
+    }
+    #hamburger > li > div > ul:nth-child(1) {
+      padding-top: 50px;
+    }
+  
+    #hamburger > li > div > ul > li:nth-child(1) > a {
+      color: white;
+    }
+    #hamburger > li > div > ul:nth-child(1) > li > a {
+      color: #4296cb;
+    }
+    #profile {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #logo {
+      width: 40%;
+    }
+    /* #hamburger > li:hover > div {
+      
+      right: 0px;
+      cursor: pointer;
+    } */
+    .menu-down-profile {
+      width: 60%;
+    }
+    #nav-mega {
+      display: none;
+    }
+    #menu-util {
+      display: none;
+    }
+    /* nav {
+      align-items: flex-start;
+     
+    } */
+  }
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div id="nav">
+
+            <div id="logo">
+                <img src="../workout-videos/fitnesSHELPER.png" alt="">
+            </div>
+            <div id="nav-mega">
+                <li><a href="">WORKOUTS</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">PROGRAMS</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Workout Programs</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Meal Plans</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Pilot Programs</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Routines</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">HEALTHY LIVING</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                </li>
+                <li><a href="">COMMUNITY</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </li>
+                <li><a href="">ABOUT</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </li>
+                <li><a href="">STORE</a> </li>
+                <li><a href="">MEMBERSHIP</a> </li>
+
+            </div>
+            <div id="profile">
+                <li>
+
+                    <div>
+                        <div id="userAvatar">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+
+                    </div>
+                    <div class="menu-down-profile">
+                        <h1>JOIN FOR FREE!</h1>
+                        <p>
+                            Join for free and start building and tracking your workouts, get support from other Fitness
+                            Blender members and more!
+
+                        </p>
+                        <div id="join" class="btn" style="background-color: #4296cb;">JOIN</div>
+                        <div id="sign-in" style="color: #212432; background-color: white;" class="btn">Sign In</div>
+                    </div>
+
+
+                </li>
+            </div>
+
+
+            <div id="hamburger">
+
+                <li>
+
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                    <div class="menu-down-media">
+                        <ul>
+                            <li><a href="">membership</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/WORKOUT.HTML">Workouts</a></li>
+                            <li><a href="/workout-videos/Workout-Videos.html">workout videos</a></li>
+                            <li><a href="/workout-videos/custom_Workout.html">custom workouts</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Programs</a></li>
+                            <li><a href="">workout programs</a></li>
+                            <li><a href="">meal plans</a></li>
+                            <li><a href="">pilot programs</a></li>
+                            <li><a href="">routines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">healthy living</a></li>
+                            <li><a href="">Articles</a></li>
+                            <li><a href="">Healthy recipes</a></li>
+                            <li><a href="">wellness videos</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">community</a></li>
+                            <li><a href="">blog</a></li>
+                            <li><a href="">what's new</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">about</a></li>
+                            <li><a href="">careers</a></li>
+                            <li><a href="">tutorials</a></li>
+                            <li><a href="">our team</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="">store</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+            </div>
+
+            <div id="menu-util">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <span class="material-symbols-outlined">
+                    shopping_bag
+                </span>
+            </div>
+        </div>
+
+    </nav>    
+    <!-- body -->
+    <div id="headImg">
+        <div id="container">
+            <div id="head-i">
+                <h1>Custom Workouts
+                    <br>
+                    <span class="fbplus">
+                    <span class="fb">FB</span>
+                    <span class="plus">Plus</span>
+                    <span class="aa">All Access</span>
+                    </span>
+                </h1>
+               <div id="btnplus"><a href=""><h1>Join All Access Now</h1></a></div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div id="walkthrough">
+        <div>
+            <h3>WALKTHROUGH</h3>
+        </div>
+    </div>
+<!--  -->
+    <div class="sec">
+        <div class="pic">
+            <img src="https://cloudfront.fitnessblender.com/assets/img/fbplus/custom-card-list.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2>Add Your Own Workouts to Fitness Blender</h2>
+            <p>Whether you want to track your evening walk or earn your workout complete with your favorite videos from outside Fitness Blender, you can now add custom workouts to your <a href="">FB Plus</a> account</p>
+        </div>
+    </div>
+    <!--  -->
+    <div class="sec">
+        <div class="detail">
+            <h2>Add, Schedule, and Track</h2>
+            <p>Create a custom workout with detailed information just like a Fitness Blender workout. You can then add it to your calendar, earn your workout complete, and track its stats on the FB dashboard.</p>
+        </div>
+        <div class="pic">
+            <img src="https://cloudfront.fitnessblender.com/assets/img/fbplus/custom-calendar.jpg" alt="">
+        </div>
+    </div>
+<!--footer  -->
+<div class="footer">
+    <div>
+        <div class="footerlogo">
+            <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+            <p>WORKOUT COMPLETE™</p>
+        </div>
+
+        <div>
+            <h7>WORKOUTS</h7>   
+            <p> WORKOUT VIDEOS</p> 
+            <p>CUSTOM WORKOUTS</p>  
+            <h7> PROGRAMS</h7>  
+            <p>WORKOUT PROGRAMS</p>  
+            <p>MEAL PLANS</p>   
+            <p>PILOT PROGRAMS</p>   
+            <p> ROUTINES</p>   
+        </div>
+
+        <div>
+            <h7>HEALTHY LIVING</h7>
+            <p>FITNESS</p>
+            <p>HEALTH</p>
+            <p>NUTRITION</p>
+            <p>HEALTHY RECIPES</p>
+            <p>EXPERTS</p>
+        </div>
+
+        <div>
+            <h7>ABOUT</h7>
+            <p>CAREERS</p> 
+            <p>TUTORIALS</p>
+            <p>OUR TEAM</p>
+            <p>B2B OPTIONS</p> 
+        </div>
+
+        <div>
+            <h7>MEMBERSHIP</h7>
+            <h7>FB PLUS</h7>
+            <h7>COMMUNITY</h7>
+            <h7>BLOG</h7>
+            <h7>CONTACT US</h7>
+            <h7>FAQ</h7>
+            <h7>STORE</h7>
+        </div>
+
+    </div>
+
+</div>
+<div class="footerbottom"> 
+    <hr>
+    <div>
+      <div>
+        <div>
+            Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+        </div>
+
+        <div class="bottom"> 
+            <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+            </a>
+            <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+            <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+            </a>
+
+            <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+            </a>
+
+            <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+            </a>
+
+        </div> 
+    </div>
+</div>
+</body>
+</html>
