@@ -6,6 +6,7 @@ const container = document.querySelector(".cards_container");
 const paginationWrapper = document.getElementById("pagination_wrapper");
 const recipeUrl = "http://localhost:3000/Recipes"
 const sortByAuthor = document.getElementById("sortByAuthors")
+const sortByMembership = document.getElementById("sortByMembership")
 let outData
 // ---------------------------------------------------------------------
 
@@ -170,9 +171,21 @@ getAllArticles(recipeUrl)
      let filterdata= outData.filter(function(elem){
         
         return elem.author==selected
- 
+             
        })    
        renderData(filterdata)
-       console.log(filterdata)
    })
- 
+
+   sortByMembership.addEventListener("change",function(){
+    let selected = sortByMembership.value
+    if(selected=="FILTERS"){
+      getArticles(recipeUrl)
+    }
+       let filterdata= outData.filter(function(elem){
+          
+          return elem.free==selected
+          
+               
+         })
+         renderData(filterdata)
+     })
