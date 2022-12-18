@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+        /* nav */
+        * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+  #nav {
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    position: relative;
+    
+  }
+  #nav-mega > li {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    color: #212432;
+  }
+  
+  #nav-mega > li:hover {
+    border-bottom: 4px solid #4296cb;
+    height: 71px;
+  }
+  
+  #nav-mega > li > span {
+    color: #4296cb;
+  }
+  
+  #logo {
+    width: 15%;
+  }
+  #logo > img {
+    width: 100%;
+    height: 80px;
+    object-fit: scale-down;
+  }
+  #nav-mega {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-down {
+    position: absolute;
+    width: 100%;
+    background-color: #32374d;
+    right: 0;
+    top: 97px;
+    height: 150px;
+  
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-down > div {
+    width: 12%;
+    margin: auto 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+  }
+  
+  .menu-down > div:hover {
+    background-color: #212432;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .menu-down > div > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-down > div p {
+    font-size: 0.8vw;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .menu-down > div span {
+    font-size: 60px;
+    color: white;
+  }
+  
+  #nav-mega > li:hover .menu-down {
+    display: flex;
+  }
+  
+  #profile {
+    width: 15%;
+    position: relative;
+  }
+  
+  #profile > li > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+  }
+  #profile > li > div:nth-child(2) * {
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  #profile > li > div:nth-child(2) {
+    height: 350px;
+    width: 250px;
+  }
+  
+  #menu-util {
+    width: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+  }
+  #userAvatar > span {
+    font-size: 50px;
+  }
+  
+  .first {
+    display: flex;
+  }
+  
+  .btn {
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover{
+    cursor: pointer;
+  }
+  
+  .menu-down-profile {
+    position: absolute;
+    width: 100%;
+    background-color: #212432;
+    display: none;
+    padding: 10px;
+  }
+  #profile > li > div:nth-child(1) {
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  #profile > li:hover .menu-down-profile {
+    display: block;
+    right: 0px;
+  }
+  #hamburger > span {
+    font-size: 45px;
+  }
+  #hamburger {
+    display: none;
+    width: 20%;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #hamburger {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+      align-items: center;
+    }
+    #hamburger > li {
+      height: 200px;
+      display: flex;
+      align-items: center;
+    }
+    #hamburger > li > span {
+      font-size: 40px;
+      cursor: pointer;
+    }
+    #hamburger > li > div {
+      position: fixed;
+      bottom: 0;
+      min-height: 100px;
+      overflow-y: scroll;
+      top: 97px;
+      background-color: #212432;
+      padding: 0px 10px;
+  
+      transition: 0.5s;
+      right: -70%;
+      cursor: pointer;
+    }
+  
+    #hamburger > li > div li {
+      text-transform: uppercase;
+      padding: 5px;
+      font-size: 20px;
+    }
+    #hamburger > li > div > ul {
+      border-bottom: 1px solid #32374d;
+      padding: 10px 10px;
+    }
+  
+    #hamburger > li > div > ul li a {
+      color: #32374d;
+    }
+    #hamburger > li > div > ul:nth-child(1) {
+      padding-top: 50px;
+    }
+  
+    #hamburger > li > div > ul > li:nth-child(1) > a {
+      color: white;
+    }
+    #hamburger > li > div > ul:nth-child(1) > li > a {
+      color: #4296cb;
+    }
+    #profile {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #logo {
+      width: 40%;
+    }
+    /* #hamburger > li:hover > div {
+      
+      right: 0px;
+      cursor: pointer;
+    } */
+    .menu-down-profile {
+      width: 60%;
+    }
+    #nav-mega {
+      display: none;
+    }
+    #menu-util {
+      display: none;
+    }
+    /* nav {
+      align-items: flex-start;
+     
+    } */
+  }
+
+
+        /* body */
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family:sans-serif;
+        }
+        #head{
+            width: 80%;
+            margin: auto;
+            padding: 1rem;
+            margin-top: 10%;
+            font-size: 25px;
+        }
+        #head>h1{
+            font-weight: 400;
+            margin-left: 3%;
+        }
+        #main{
+            width: 80%;
+            height: auto;
+            /* border: 1px solid black; */
+            padding: 1rem;
+            margin: auto;
+            display: flex;
+        }
+        #first{
+            width: 60%;
+            height: 80%;
+            /* border: 1px solid blue; */
+        }
+
+        #second{
+            height: 80%;
+            width: 30%;
+            /* border: 1px solid yellow; */
+        }
+
+        .img{
+            width: 100%;
+        }
+        .img>img{
+            width: 100%;
+        }
+
+        .title{
+            width: 100%;
+            /* border: 1px solid black; */
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .title>h3{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        .title>h4{
+            color: rgb(82, 80, 80);
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .box p{
+            color: rgb(82, 80, 80) ;
+        }
+        .light{
+            font-size: 12px;
+            margin-bottom: 1%;
+        }
+
+        .readmore{
+            margin-top: 2%;
+            width: 18%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .readmore>h3{
+            color: #4296cb;
+        }
+        .fa-plus{
+            font-size: 20px;
+            color: rgb(167, 162, 162);
+        }
+        .Bbox{
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        /* second */
+
+        #second{
+            margin-top: 10%;
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #Gmap{
+            margin: auto;
+            margin-left: 25%;
+            width: 75%;
+            height: 240px;
+            background-image: url("https://tpc.googlesyndication.com/simgad/14136859680915370953/2076313506083323656");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10%;
+        }
+        #Gmap>#mapt{
+            height: 35%;
+            width: 75%;
+            padding-left: 1rem;
+        }
+        #mapt h2{
+            font-size: 20px;
+        }
+
+        #Gmap>#mapt>p{
+            margin-top: 4%;
+            font-size: 12px;
+            color: rgb(82, 80, 80);
+        }
+        #Gmap>#icon{
+            height: 25%;
+        }
+        .fa-circle-chevron-right{
+            font-size: 40px;
+            color: white;
+        }
+        .head{
+            width: 75%;
+            margin-left: 25%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10%;
+        }
+        .head>h1{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.1em;
+        }
+        .head>div{
+            width: 70%;
+            height: 0px;
+            background-color: #4296cb;
+            /* border-radius: 10px; */
+            border: 2px solid #4296cb;
+        }
+
+
+        .cont{
+            width: 75%;
+            margin-left: 25%;
+            margin-bottom: 8%;
+        }        
+        .cont .pic{
+            width: 100%;
+        }
+        .pic img{
+            width: 100%;
+        }
+
+        .des p{
+            font-size: 10px;
+            margin-top: 5%;
+            margin-bottom: 3%;
+            color: #4296cb;
+        }
+        .des h2{
+            font-size:17px;
+            margin-bottom: 2%;
+        }
+
+        .des h3{
+            font-weight: 400;
+            color: rgb(82, 80, 80);
+        }
+        #socialt{
+            width: 80%;
+            margin-left:25%;
+            margin-bottom:15%;
+        }
+        #socialicon{
+            width: 40%;
+            height: 25px;
+            margin-left: 22%;
+            margin-top: 5%;
+            margin-bottom: 20%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #socialicon div:nth-child(1){
+            width: 16%;
+            height: 100%;
+            padding: .1rem;
+            text-align: center;
+            border-radius: 50%;
+            background-color: rgb(199, 5, 5);
+        }
+        .fa-you{
+            margin-top: 0.25rem;
+            font-size: 18px;
+            color: white;
+            background-color:rgb(199, 5, 5);
+        }
+        #socialicon div:nth-child(2){
+            width: 16%;
+            height: 100%;
+            padding: .1rem;
+            text-align: center;
+            border-radius: 50%;
+            background-color:  rgb(75, 75, 198);
+        }
+
+        .fa-fb{
+            margin-top: .15rem;
+            font-size: 18px;
+            color: white;
+        }
+
+        #socialicon div:nth-child(3){
+            width: 15%;
+            height: 100%;
+            padding: .1rem;
+            text-align: center;
+            background-color: #E1306C;
+            border-radius: 50%;
+        }
+        .fa-insta{
+            margin-top: .25rem;
+            font-size: 19px;
+            background-color: #E1306C;
+            color: white;
+        }
+
+        #socialicon div:nth-child(4){
+            width: 15%;
+            height: 100%;
+            padding: .1rem;
+            text-align: center;
+            background-color: #1DA1F2;
+            border-radius: 50%;
+        }
+
+        .fa-twt{
+            font-size: 14px;
+            margin-top: .4rem;
+            color: white;
+        }
+
+        #socialicon div:nth-child(5){
+            width: 15%;
+            height: 100%;
+            padding: .1rem;
+            text-align: center;
+            background-color: rgb(199, 5, 5);
+            border-radius: 50%;
+        }
+
+        .fa-pin{
+            color: white;
+            font-size: 14px;
+            margin-top: 0.3rem;
+        }
+
+        /* footer */
+        .footer{
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: 100px;
+            padding-bottom: 100px;
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .footer h7{
+           color: rgb(227, 235, 238);
+           display: block;
+           margin-bottom: 10px;
+           font-weight: 600;
+        }
+
+        .footer>div{
+            width: 70%;
+            padding-top: 60px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footerlogo{
+            width: 40%;
+
+        }
+        .footerbottom{
+            font-size: 12px;
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: -20px;
+
+        }
+        .footerbottom>div{
+            height: 50px;
+            width: 70%;
+            margin: auto;
+        }
+        .footerbottom>div>div{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr{
+           width: 70%;
+           margin: auto;
+           background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: .15px;
+        }
+
+        .bottom{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+    </style>
+</head>
+<body>
+   <!-- Nav Bar -->
+    
+   <body>
+    <nav>
+        <div id="nav">
+
+            <div id="logo">
+                <img src="../workout-videos/fitnesSHELPER.png" alt="">
+            </div>
+            <div id="nav-mega">
+                <li><a href="">WORKOUTS</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">PROGRAMS</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Workout Programs</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Meal Plans</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Pilot Programs</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    description
+                                </span>
+                                <p>Routines</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </li>
+                <li><a href="">HEALTHY LIVING</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                </li>
+                <li><a href="">COMMUNITY</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </li>
+                <li><a href="">ABOUT</a><span class="material-symbols-outlined">
+                        arrow_drop_down
+                    </span>
+                    <div class="menu-down">
+                        <div>
+                            <a href="http://">
+
+                                <span class="material-symbols-outlined">
+                                    sports_gymnastics
+                                </span>
+                                <p>Workout Videos</p>
+
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://">
+                                <span class="material-symbols-outlined">
+                                    functions
+                                </span>
+                                <p>custom Workouts</p>
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </li>
+                <li><a href="">STORE</a> </li>
+                <li><a href="">MEMBERSHIP</a> </li>
+
+            </div>
+            <div id="profile">
+                <li>
+
+                    <div>
+                        <div id="userAvatar">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+
+                    </div>
+                    <div class="menu-down-profile">
+                        <h1>JOIN FOR FREE!</h1>
+                        <p>
+                            Join for free and start building and tracking your workouts, get support from other Fitness
+                            Blender members and more!
+
+                        </p>
+                        <div id="join" class="btn" style="background-color: #4296cb;">JOIN</div>
+                        <div id="sign-in" style="color: #212432; background-color: white;" class="btn">Sign In</div>
+                    </div>
+
+
+                </li>
+            </div>
+
+
+            <div id="hamburger">
+
+                <li>
+
+
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                    <div class="menu-down-media">
+                        <ul>
+                            <li><a href="">membership</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/WORKOUT.HTML">Workouts</a></li>
+                            <li><a href="/workout-videos/Workout-Videos.html">workout videos</a></li>
+                            <li><a href="/workout-videos/custom_Workout.html">custom workouts</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Programs</a></li>
+                            <li><a href="">workout programs</a></li>
+                            <li><a href="">meal plans</a></li>
+                            <li><a href="">pilot programs</a></li>
+                            <li><a href="">routines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">healthy living</a></li>
+                            <li><a href="">Articles</a></li>
+                            <li><a href="">Healthy recipes</a></li>
+                            <li><a href="">wellness videos</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">community</a></li>
+                            <li><a href="">blog</a></li>
+                            <li><a href="">what's new</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">about</a></li>
+                            <li><a href="">careers</a></li>
+                            <li><a href="">tutorials</a></li>
+                            <li><a href="">our team</a></li>
+
+                        </ul>
+                        <ul>
+                            <li><a href="">store</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+
+            </div>
+
+            <div id="menu-util">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <span class="material-symbols-outlined">
+                    shopping_bag
+                </span>
+            </div>
+        </div>
+
+    </nav>    
+
+    <!-- body -->
+    <div id="head"><h1>Blog</h1></div>
+    <div id="main">
+        <div id="first">
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1321-november-2022-vlog-9931.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>Vlog: So Much Good News!</h3>
+                        <h4>November 2022 Update From Kelli, Daniel, and Team</h4>
+                    </div>
+                    <p class="light">November 27, 2022</p>
+                    <p>Celebrating our current 25% off sale for FB Plus, as well as fun announcements from Kelli, Daniel, and the Fitness Blender Team.</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1320-25-off-passes-and-plus-november-2022-sale-85e6.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>25% Off Passes & Plus - November 2022 Sale!</h3>
+                        <h4></h4>
+                    </div>
+                    <p class="light">November 25, 2022</p>
+                    <p>Introducing our November 2022 sale: 25% off FB Plus Passes and Subscriptions — for a limited time!</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1318-three-legacy-programs-on-sale-for-30-off-october-2022-sale-b2d6.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>Three Legacy Programs on SALE for 30% Off! - October 2022 Sale</h3>
+                        <h4></h4>
+                    </div>
+                    <p class="light">October 5, 2022</p>
+                    <p>Three of our most popular legacy programs are on sale through October 20! Get ready to feel motivated, stay on track, improve your fitness, and feel great.</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1317-new-strength-building-meal-plan-a087.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>NEW Strength Building Meal Plan</h3>
+                        <h4>1 Week of High Protein Omnivore Recipes</h4>
+                    </div>
+                    <p class="light">September 11, 2022</p>
+                    <p>Developed by Registered Dietitians and Recipe Developers, our new meal plan features recipes that are nutrient dense and high in protein to support your body as you build strength.</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1306-new-fb-pregnancy-program-series-8d3c.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>NEW FB Pregnancy Program Series!</h3>
+                        <h4>Programs for Preconception and the First, Second, and Third Trimesters</h4>
+                    </div>
+                    <p class="light">August 14, 2022</p>
+                    <p>We’re excited to announce the launch of a brand new pregnancy program for FB Plus members: the FB Pregnancy Series!</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1312-new-8-week-fb-reboot-program-and-a-sale-on-fb-plus-ac93.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>New 8-Week FB Reboot Program and a Sale on FB Plus!</h3>
+                        <h4>Build Consistency and Improve Fitness With a Beginner-Friendly Program at a Big Discount</h4>
+                    </div>
+                    <p class="light">July 31, 2022</p>
+                    <p>Inspired by the popular 2-Week Challenge, our 8-Week FB Reboot Program is designed to help you jumpstart a consistent fitness routine after a workout break. Plus, we have a 30% off sale on FB Plus Subscriptions and Passes for new users!</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1260-three-programs-on-sale-for-30-off-july-2022-sale-ab7e.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>Three Programs on SALE for 30% Off! - July 2022 Sale</h3>
+                        <h4></h4>
+                    </div>
+                    <p class="light">July 4, 2022</p>
+                    <p>Three of our classic workout programs are on sale through July 18! Get ready to feel motivated, stay on track, improve your fitness, and feel great.</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+            <div class="Bbox">
+                <div class="img">
+                    <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1251-introducing-our-new-meal-plan-meals-under-30-minutes-b7ce.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="title">
+                    <h3>Introducing Our NEW Meal Plan: Meals Under 30 Minutes</h3>
+                        <h4></h4>
+                    </div>
+                    <p class="light">May 16, 2022</p>
+                    <p>This 1-week meal plan designed for omnivores on the go. With a blend of meal prep and smart leftover usage, the recipes throughout this plan all boast a time commitment of 30 minutes or less.</p>
+                    <div class="readmore"><i class="fa-solid fa-plus"></i> <h3>Read More</h3></div>
+                </div>
+            </div>
+           
+        </div>
+        <div id="second">
+            <a target="_blank" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=C_yaC4NqeY7rIA_yzvcAPnLi-mAn--KL2bZPozPHgEOzO9vrHKhABIJKKhhVg5YKAgNwpoAHL8cr3A8gBCagDAcgDywSqBOoBT9CI3jiqU1X5iw0Eid0Qj05PEJJZCNYwGT-BQUq7vf9ouNTtQ4FXc81Hz615Ycdroo1WUp-_4bbjUMFTNIWucwtTiLVIsLgG90iE7Ktq5MIdqkDjZWcuD-ASph6Vz5NwHzAAYK-8Njcba8B3UKpCeAeEILPoETrSulbr08WTOKo3zpIfAZGfbPiqbODibkB2z5V5rWoaNHGrlInAElTnezc8es0cThlHAT6JC_CpNWTg4RvDydVfxXWCUnx_OuV5tfGIAfVgFwSOk7v7Edon0KjtWANLWGB5u9Ffy9D1P42nXm-VojPedSe2wAT8zNvy9gOQBgGgBi6AB52OtQiIBwGQBwKoB47OG6gHk9gbqAfulrECqAf-nrECqAeko7ECqAfVyRuoB6a-G6gHmgaoB_PRG6gHltgbqAeqm7ECqAf_nrECqAffn7EC2AcA0ggSCAAQAhgaMgEAOgefwICAgIAEsQkQOALY5bCoyoAKAYoKggJodHRwczovL2NsaWNrc2VydmUuZGFydHNlYXJjaC5uZXQvbGluay9jbGljaz8mZHNfYV9jaWQ9MTYxOTI2ODkmZHNfYV9jYWlkPTE2NzA2ODYyOTAxJmRzX2FfYWdpZD0xMzQ5OTUxNzUwMzYmZHNfYV9maWlkPSZkc19hX2xpZD0mZHNfYV9leHRpZD0mJmRzX2VfYWRpZD02MzY1NTc0NzgxMzImZHNfZV9tYXRjaHR5cGU9Y29udGVudCZkc19lX2RldmljZT1jJmRzX2VfbmV0d29yaz1kJiZkc191cmxfdj0yJmRzX2Rlc3RfdXJsPXt1bmVzY2FwZWRscHVybH2YCwHICwHgCwGADAG4DAG4E-QD2BMK0BUBmBYB-BYBgBcB&ae=1&num=1&cid=CAQSQgDq26N9pzgxGcasWX4FXQ49Mpw1pK7Moi5I0HI_8ef1A19jmPdrh5GmwKAnzavM3wyJ5kE964YOjvPKBvHqLivJCRgBIBM&sig=AOD64_1EhsBl8Rx3TjeTY4TPbCXJDRBccA&client=ca-pub-2716376464462791&nb=9&adurl=https://mapsplatform.google.com/%3Futm_source%3Ddisplay%26utm_medium%3Dgoogleads%26utm_campaign%3Dprospecting_cust_sea_desk_in%26utm_content%3Dget_started_new_checkout%26gclsrc%3Daw.ds%26gclid%3DCjwKCAiAkfucBhBBEiwAFjbkr288JZ3D19UkdX-Brc7MqB90EwJ4v0Y7LXF01wyabGYiUz8lok4WRxoCXvkQAvD_BwE"><div id="Gmap">
+                <div id="mapt">
+                    <h2>Maps Platform for<br> Checkout</h2>
+                    <p>Google Maps Platform</p>
+                </div>
+                <div id="icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+            </div>
+        </a>
+        <!--  -->
+        <div class="head"><h1>FEATURED</h1><div></div></div>
+        <!--  -->
+        <div class="cont">
+            <div class="pic">
+                <a href=""><img src="https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_1_fb-30-trial-fitness-blenders-fat-loss-program-for-busy-people.jpg" alt=""></a>
+            </div>
+            <div class="des">
+                <p>PROGRAMS</p>
+                <a href=""><h2>FB 30 Trial - Fitness Blender's Fat Loss Program For Busy People</h2></a>
+                <h3>30 Minute workouts can have a significant impact on your health, fitness, bodyweight and body fat. This 2 week trial is a great way to jumpstart your fitness goals and try out our home workout programs.</h3>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="pic">
+                <a href=""><img src="https://d18zdz9g6n5za7.cloudfront.net/video/1020/1020-956-add-on-style-total-body-hiit-with-step-a5df.jpg" alt=""></a>
+            </div>
+            <div class="des">
+                <p>WORKOUTS</p>
+                <a href=""><h2>Add-On Style Total Body HIIT with Step</h2></a>
+                <h3>Don’t let the short and sweet title fool you — this total body HIIT workout will test your limits and give you the sweetest afterburn ever. We did warn you!</h3>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="pic">
+                <a href=""><img src="https://d18zdz9g6n5za7.cloudfront.net/blog/1020/1020-1161-energy-boosting-bean-green-and-grain-bowl-9444.jpg" alt=""></a>
+            </div>
+            <div class="des">
+                <p>ARTICLES</p>
+                <a href=""><h2>Energy-Boosting Bean, Green, and Grain Bowl</h2></a>
+                <h3>Boost your energy, metabolism, and mood with this nutritious veggie bowl recipe.</h3>
+            </div>
+        </div>
+        <!--  -->
+        <div class="head"><h1>FOLLOW US</h1><div></div></div>
+        <!--  -->
+        <div id="socialt">
+            <p>On social media, we encourage you to use #FitnessBlender to share your progress, motivate others, and find inspiration.</p>
+        </div>
+        <!--  -->
+        <div id="socialicon">
+            <div><i class="fa-brands fa-youtube fa-you"></i></div>
+            <div><i class="fa-brands fa-facebook-f fa-fb"></i></div>
+            <div><i class="fa-brands fa-instagram fa-insta"></i></div>
+            <div><i class="fa-brands fa-twitter fa-twt"></i></div>
+            <div><i class="fa-brands fa-pinterest fa-pin"></i></div>
+        </div>
+        <!--  -->
+        <a target="_blank" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=C_yaC4NqeY7rIA_yzvcAPnLi-mAn--KL2bZPozPHgEOzO9vrHKhABIJKKhhVg5YKAgNwpoAHL8cr3A8gBCagDAcgDywSqBOoBT9CI3jiqU1X5iw0Eid0Qj05PEJJZCNYwGT-BQUq7vf9ouNTtQ4FXc81Hz615Ycdroo1WUp-_4bbjUMFTNIWucwtTiLVIsLgG90iE7Ktq5MIdqkDjZWcuD-ASph6Vz5NwHzAAYK-8Njcba8B3UKpCeAeEILPoETrSulbr08WTOKo3zpIfAZGfbPiqbODibkB2z5V5rWoaNHGrlInAElTnezc8es0cThlHAT6JC_CpNWTg4RvDydVfxXWCUnx_OuV5tfGIAfVgFwSOk7v7Edon0KjtWANLWGB5u9Ffy9D1P42nXm-VojPedSe2wAT8zNvy9gOQBgGgBi6AB52OtQiIBwGQBwKoB47OG6gHk9gbqAfulrECqAf-nrECqAeko7ECqAfVyRuoB6a-G6gHmgaoB_PRG6gHltgbqAeqm7ECqAf_nrECqAffn7EC2AcA0ggSCAAQAhgaMgEAOgefwICAgIAEsQkQOALY5bCoyoAKAYoKggJodHRwczovL2NsaWNrc2VydmUuZGFydHNlYXJjaC5uZXQvbGluay9jbGljaz8mZHNfYV9jaWQ9MTYxOTI2ODkmZHNfYV9jYWlkPTE2NzA2ODYyOTAxJmRzX2FfYWdpZD0xMzQ5OTUxNzUwMzYmZHNfYV9maWlkPSZkc19hX2xpZD0mZHNfYV9leHRpZD0mJmRzX2VfYWRpZD02MzY1NTc0NzgxMzImZHNfZV9tYXRjaHR5cGU9Y29udGVudCZkc19lX2RldmljZT1jJmRzX2VfbmV0d29yaz1kJiZkc191cmxfdj0yJmRzX2Rlc3RfdXJsPXt1bmVzY2FwZWRscHVybH2YCwHICwHgCwGADAG4DAG4E-QD2BMK0BUBmBYB-BYBgBcB&ae=1&num=1&cid=CAQSQgDq26N9pzgxGcasWX4FXQ49Mpw1pK7Moi5I0HI_8ef1A19jmPdrh5GmwKAnzavM3wyJ5kE964YOjvPKBvHqLivJCRgBIBM&sig=AOD64_1EhsBl8Rx3TjeTY4TPbCXJDRBccA&client=ca-pub-2716376464462791&nb=9&adurl=https://mapsplatform.google.com/%3Futm_source%3Ddisplay%26utm_medium%3Dgoogleads%26utm_campaign%3Dprospecting_cust_sea_desk_in%26utm_content%3Dget_started_new_checkout%26gclsrc%3Daw.ds%26gclid%3DCjwKCAiAkfucBhBBEiwAFjbkr288JZ3D19UkdX-Brc7MqB90EwJ4v0Y7LXF01wyabGYiUz8lok4WRxoCXvkQAvD_BwE"><div id="Gmap">
+            <div id="mapt">
+                <h2>Maps Platform for<br> Checkout</h2>
+                <p>Google Maps Platform</p>
+            </div>
+            <div id="icon"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+    </a>
+
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer">
+        <div>
+            <div class="footerlogo">
+                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+                <p>WORKOUT COMPLETE™</p>
+            </div>
+
+            <div>
+                <h7>WORKOUTS</h7>   
+                <p> WORKOUT VIDEOS</p> 
+                <p>CUSTOM WORKOUTS</p>  
+                <h7> PROGRAMS</h7>  
+                <p>WORKOUT PROGRAMS</p>  
+                <p>MEAL PLANS</p>   
+                <p>PILOT PROGRAMS</p>   
+                <p> ROUTINES</p>   
+            </div>
+
+            <div>
+                <h7>HEALTHY LIVING</h7>
+                <p>FITNESS</p>
+                <p>HEALTH</p>
+                <p>NUTRITION</p>
+                <p>HEALTHY RECIPES</p>
+                <p>EXPERTS</p>
+            </div>
+
+            <div>
+                <h7>ABOUT</h7>
+                <p>CAREERS</p> 
+                <p>TUTORIALS</p>
+                <p>OUR TEAM</p>
+                <p>B2B OPTIONS</p> 
+            </div>
+
+            <div>
+                <h7>MEMBERSHIP</h7>
+                <h7>FB PLUS</h7>
+                <h7>COMMUNITY</h7>
+                <h7>BLOG</h7>
+                <h7>CONTACT US</h7>
+                <h7>FAQ</h7>
+                <h7>STORE</h7>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footerbottom"> 
+        <hr>
+        <div>
+          <div>
+            <div>
+                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+            </div>
+
+            <div class="bottom"> 
+                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+                </a>
+
+                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+                </a>
+
+                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+                </a>
+
+            </div> 
+        </div>
+ </div>
+</body>
+</html>
+<script>
+     let hamburger = document.querySelector('#hamburger>li>span')
+
+let hamburgerDown = document.querySelector('#hamburger>li>div')
+let hamcount = 0
+hamburger.addEventListener('click', () => {
+    if (hamcount == 0) {
+
+        hamburger.classList.add = 'material-symbols-sharp'
+        hamburger.classList.remove = 'material-symbols-outlined'
+        hamburger.textContent = 'close'
+        hamburgerDown.style.right = '0px'
+        hamcount++
+    } else {
+
+
+        hamburger.textContent = 'menu'
+        hamburger.classList.add = 'material-symbols-outlined'
+        hamburger.classList.remove = 'material-symbols-sharp'
+        hamcount = 0
+        hamburgerDown.style.right = '-70%'
+    }
+
+})
+</script>

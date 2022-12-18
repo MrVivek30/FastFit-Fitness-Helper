@@ -7,14 +7,260 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        #bod{
+            width: 100%;
+            height: auto;
+            background-color: #E3EBEE;
         }
+        #bod>#bodin{
+            margin: auto;
+            width: 80%;
+            height: 100%;
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-template-rows: auto;
+           gap: 10px;
+        }
+        .cards{
+            perspective: 1000px;
+        }
+        #bod .cards .flip-front{
+            width: 100%;
+            height: 20%;
+            margin-top:2%;
+            margin-right:2px;
+            padding: 2px;
+            
+        }
+        .upper{
+            border: 1px solid white;
+        }
+        .upper>img{
+            width: 100%;
+            margin: auto;
+            object-fit: fill;
+        }
+        .cards .bottom{
+            width: 100%;
+            margin-top: -10px;
+            height:200px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        .cards .bottom>.workout-title>h1{
+            font-size: 16px;
+            line-height: 1.2em;
+            font-weight: 400;
+            margin: 1rem 1rem 0.5rem 1rem;
+            text-rendering: optimizeLegibility;
+        }
+
+        .cards .bottom>.workout-title>h2{
+            font-size: 16px;
+            font-weight: 400;
+            text-rendering: optimizeLegibility;
+            color: #4296cb;
+            margin: 1rem 1rem 0.5rem 1rem;
+  
+        }
+
+       .cards .bottom>.schedule>div{
+            font-size: 30px;
+            margin-top: 5%;
+            margin: .5rem ;
+            text-align: center;
+        }
+        #btnwrapper{
+            width: 20%;
+            margin: auto;
+        }
+
+        .btn{
+            margin: auto;
+            background-color: #4296cb;
+            color: #E3EBEE;
+            padding: 10px;
+         } 
+
+/* media query */
+
+@media all and (max-width: 1320px ) and (min-width: 1146px ) { 
+
+    #bod>#bodin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+}
+
+@media all and (max-width: 1145px) and (min-width: 640px ) { 
+    
+#bod>#bodin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+}
+
+@media all and (max-width: 639px){ 
+    
+#bod>#bodin {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+}
+
+#pagination{
+    margin-top: 2%;
+    margin-bottom: 2%;
+   width: 100%;
+}
+#pagination .paginationbtnlist{
+    margin: auto;
+    width: 30%;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow:
+  0 0.3px 0.6px rgba(0, 0, 0, 0.056),
+  0 0.7px 1.3px rgba(0, 0, 0, 0.081),
+  0 1.3px 2.5px rgba(0, 0, 0, 0.1),
+  0 2.2px 4.5px rgba(0, 0, 0, 0.119),
+  0 4.2px 8.4px rgba(0, 0, 0, 0.144),
+  0 10px 20px rgba(0, 0, 0, 0.2)
+;
+}
+#pagination .paginationbtnlist button{
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border: 1px solid white;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#pagination .paginationbtnlist button:hover{
+    background-color: #E3EBEE;
+    border-radius: 50% ;
+}
+
+#pagination .paginationbtnlist button:focus{
+ background-color: black;
+ color: white;
+ border-radius: 50% ;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+ .flip-inner{
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+
+  .display{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -27%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
+ }
+
+ .cards:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.cards:hover .display{
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    transform: rotateY(360deg);
+}
+
+.display{
+    background: white;
+    transform: rotateY(180deg);
+}
+
+/* footer */
+.footer{
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: 100px;
+            padding-bottom: 100px;
+            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        .footer h7{
+           color: rgb(227, 235, 238);
+           display: block;
+           margin-bottom: 10px;
+           font-weight: 600;
+        }
+
+        .footer>div{
+            width: 70%;
+            padding-top: 60px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footerlogo{
+            width: 40%;
+
+        }
+        .footerbottom{
+            font-size: 12px;
+            background-color: rgb(33, 36, 50);
+            color: rgb(123, 127, 146);
+            margin-top: -20px;
+
+        }
+        .footerbottom>div{
+            height: 50px;
+            width: 70%;
+            margin: auto;
+        }
+        .footerbottom>div>div{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        hr{
+           width: 70%;
+           margin: auto;
+           background-color: #eee;
+            border: 0 none;
+            color: #eee;
+            height: .15px;
+        }
+
+        .bottom{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
         /* navbar */
+          
+        /* Nav Bar */
         * {
     margin: 0;
     padding: 0;
@@ -271,231 +517,6 @@
      
     } */
   }
-
-
-
-        /* body */
-        #header{
-            margin: auto;
-            width: 80%;
-            padding: 5px;
-            margin-top: 10%;
-        }
-        #menu{
-            /* border: 1px solid black; */
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        #left{
-            width: 20%;
-            display: flex;
-            align-items: center;
-            /* border: 1px solid green; */
-        }
-
-       #menu #right{
-            padding:1rem ;
-            width: 40%;
-            /* border: 1px solid red; */
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor:progress;
-        }
-        #disc{
-            width: 50%;
-            margin-right: 3%;
-            text-align: center;
-            font-weight:300;
-            font-size: 10px;
-            padding: 1rem;
-            color: white;
-            border-radius: 10px;
-            background-color: #4296CB;
-            cursor: pointer;
-        }
-
-        .fa-solid{
-            font-size: large;
-            margin-right: 5%;
-        }
-       
-        #sort{
-            color: rgb(76, 73, 73);
-            font-weight: 400;
-            margin-right: 2%;
-        }
-        #s{
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        #header>h1{
-            font-weight: 400;
-        }
-
-          /*btns*/
-
-          .btns{
-            margin: auto;
-            display: flex;
-            width: 80%;
-          }
-          .btns div{
-            border: 1px solid white;
-            text-align: center;
-            padding: .5rem;
-            margin-right:5px;
-            background-color: white;
-            border-radius: 5px;
-            font-weight: 500;
-            cursor: pointer;
-          }
-
-          #del{
-            color: #4296CB;
-          }
-
-        /* list */
-        #body{
-            background-color: #eee;
-            padding-top: 1rem;
-            padding-bottom:0.5rem;
-        }
-
-        #list{
-            width: 80%;
-            background-color: white;
-            margin: auto;
-            margin-top: 2%;
-            /* border: 1px solid red; */
-            padding: 1rem;
-        }
-
-        .comment{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            border: 1px solid rgb(231, 226, 226);
-        }
-
-        .comment>div{
-            /* border: 1px solid black; */
-            padding: 1rem;
-        }
-
-        .comment>div>h1{
-            font-size: 15px;
-        }
-
-        .comment>div:nth-child(1){
-            width: 5%;
-        }
-        .comment>div:nth-child(2){
-            width: 45%;
-            text-align: left;
-        }
-        .comment>div:nth-child(3){
-            width: 40%;
-            text-align: left;
-        }
-        .comment>div:nth-child(4){
-            width: 5%;
-            text-align: left;
-        }
-        .comment>div:nth-child(5){
-            width: 5%;
-            text-align: left;
-        }
-
-        .comment>div>img{
-            width: 100%;
-            border-radius:50%;
-        }
-
-        #title{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 5%;
-            margin: 1rem;
-        }
-
-        #title>div:nth-child(1){
-            width: 50%;
-        }
-
-        #title>div:nth-child(2){
-            width: 30%;
-        }
-
-        /* footer */
-        .footer{
-            background-color: rgb(33, 36, 50);
-            color: rgb(123, 127, 146);
-            margin-top: 100px;
-            padding-bottom: 100px;
-            font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 20px;
-        }
-        .footer h7{
-           color: rgb(227, 235, 238);
-           display: block;
-           margin-bottom: 10px;
-           font-weight: 600;
-        }
-
-        .footer>div{
-            width: 70%;
-            padding-top: 60px;
-            margin: auto;
-
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .footerlogo{
-            width: 40%;
-
-        }
-        .footerbottom{
-            font-size: 12px;
-            background-color: rgb(33, 36, 50);
-            color: rgb(123, 127, 146);
-            margin-top: -20px;
-
-        }
-        .footerbottom>div{
-            height: 50px;
-            width: 70%;
-            margin: auto;
-        }
-        .footerbottom>div>div{
-            margin-top: 10px;
-            height: 40px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        hr{
-           width: 70%;
-           margin: auto;
-           background-color: #eee;
-            border: 0 none;
-            color: #eee;
-            height: .15px;
-        }
-
-        .bottom{
-            width: 200px;
-            display: flex;
-            justify-content: space-between;
-        }
 
 
 
@@ -763,297 +784,122 @@
                 </div>
             </div>
     
-        </nav>  
-    <!-- top -->
-    <div id="header">
-        <h1>Community</h1>
-        <div id="menu">
-            <div id="left">TOPICS</div>
-            <div id="right">
-                <div id="disc"><h3>START A DISCUSSION</h3></div>
-                <div id="s"><i class="fa-solid fa-magnifying-glass"></i>
-                <h3 id="sort">sort </h3>
-                <h3>Newest First</h3>
-            </div>
-            </div>
+        </nav>    
+    <!-- body -->
+    <div id="bod">
+        <div id="bodin">
+            
         </div>
     </div>
-    <!-- list -->
-    <div id="body">
-        <div class="btns">
-            <div id="del">Clear All</div>
-            <div>FB Team</div>
-            <div>FB Site Update</div>
-        </div>
-    <div id="list">
-        <div id="title">
-            <div><p>DISCUSSION</p></div>
-            <div><p>POSTED IN</p></div>
-            <div><p>REPLIES</p></div>
-            <div><p>LIKES</p></div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Tech Updates and Bug Fixes </h1>
-                <p>By Brandon @ Fitness Blender — 2 weeks ago</p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Military Address Support and PayPal Improvements</h1>
-                <p>By Brandon @ Fitness Blender — 2 weeks ago </p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Remember Me Improvements </h1>
-                <p>By Brandon @ Fitness Blender — 2 weeks ago</p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Bug fixes and New Player Pause Debug Page</h1>
-                <p>By Brandon @ Fitness Blender — 3 weeks ago </p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Interactive Meal Plans Launch </h1>
-                <p>By Brandon @ Fitness Blender — 3 weeks ago</p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Site Maintenance - Friday - Nov 18 🚨 </h1>
-                <p>By Brandon @ Fitness Blender — 1 month ago </p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>System and Privacy Improvements </h1>
-                <p>By Brandon @ Fitness Blender — 1 month ago </p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Quick Notes and Tags  </h1>
-                <p>By Brandon @ Fitness Blender — 2 months ago</p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>Workout Cards and Guided Tours </h1>
-                <p>By Brandon @ Fitness Blender — 2 months ago </p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
-        <div class="comment">
-            <div>
-                <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280" alt="">
-            </div>
-            <div>
-                <h1>FB Plus Playback Outage - Resolved </h1>
-                <p>By Brandon @ Fitness Blender — 3 months ago</p>
-            </div>
-            <div><p>
-                FB Team / FB Site Updates</p></div>
-            <div>
-                <i class="fa-solid fa-arrow-left-long"></i>5
-            </div>
-            <div>
-                <i class="fa-regular fa-thumbs-up"></i>
-                26
-            </div>
-        </div>
+<!-- pagination -->
+    <div id="pagination"></div>
     </div>
-</div>
-
-<!-- footer -->
-
-<div class="footer">
-    <div>
-        <div class="footerlogo">
-            <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
-            <p>WORKOUT COMPLETE™</p>
-        </div>
-
+    <!-- footer -->
+    <div class="footer">
         <div>
-            <h7>WORKOUTS</h7>   
-            <p> WORKOUT VIDEOS</p> 
-            <p>CUSTOM WORKOUTS</p>  
-            <h7> PROGRAMS</h7>  
-            <p>WORKOUT PROGRAMS</p>  
-            <p>MEAL PLANS</p>   
-            <p>PILOT PROGRAMS</p>   
-            <p> ROUTINES</p>   
-        </div>
+            <div class="footerlogo">
+                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+                <p>WORKOUT COMPLETE™</p>
+            </div>
 
-        <div>
-            <h7>HEALTHY LIVING</h7>
-            <p>FITNESS</p>
-            <p>HEALTH</p>
-            <p>NUTRITION</p>
-            <p>HEALTHY RECIPES</p>
-            <p>EXPERTS</p>
-        </div>
+            <div>
+                <h7>WORKOUTS</h7>   
+                <p> WORKOUT VIDEOS</p> 
+                <p>CUSTOM WORKOUTS</p>  
+                <h7> PROGRAMS</h7>  
+                <p>WORKOUT PROGRAMS</p>  
+                <p>MEAL PLANS</p>   
+                <p>PILOT PROGRAMS</p>   
+                <p> ROUTINES</p>   
+            </div>
 
-        <div>
-            <h7>ABOUT</h7>
-            <p>CAREERS</p> 
-            <p>TUTORIALS</p>
-            <p>OUR TEAM</p>
-            <p>B2B OPTIONS</p> 
-        </div>
+            <div>
+                <h7>HEALTHY LIVING</h7>
+                <p>FITNESS</p>
+                <p>HEALTH</p>
+                <p>NUTRITION</p>
+                <p>HEALTHY RECIPES</p>
+                <p>EXPERTS</p>
+            </div>
 
-        <div>
-            <h7>MEMBERSHIP</h7>
-            <h7>FB PLUS</h7>
-            <h7>COMMUNITY</h7>
-            <h7>BLOG</h7>
-            <h7>CONTACT US</h7>
-            <h7>FAQ</h7>
-            <h7>STORE</h7>
+            <div>
+                <h7>ABOUT</h7>
+                <p>CAREERS</p> 
+                <p>TUTORIALS</p>
+                <p>OUR TEAM</p>
+                <p>B2B OPTIONS</p> 
+            </div>
+
+            <div>
+                <h7>MEMBERSHIP</h7>
+                <h7>FB PLUS</h7>
+                <h7>COMMUNITY</h7>
+                <h7>BLOG</h7>
+                <h7>CONTACT US</h7>
+                <h7>FAQ</h7>
+                <h7>STORE</h7>
+            </div>
+
         </div>
 
     </div>
-
-</div>
-<div class="footerbottom"> 
-    <hr>
-    <div>
-      <div>
+    <div class="footerbottom"> 
+        <hr>
         <div>
-            Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+          <div>
+            <div>
+                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+            </div>
+
+            <div class="bottom"> 
+                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+                </a>
+                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+                </a>
+
+                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+                </a>
+
+                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+                </a>
+            </div> 
         </div>
+ </div>
 
-        <div class="bottom"> 
-            <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
-                <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
-            </a>
-            <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
-                <span><i style="font-size:24px"  class="fab fa-github"></i></span>
-            </a>
-            <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
-            <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
-            </a>
 
-            <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
-                <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
-            </a>
-
-            <a href="https://twitter.com/FitnessBlender" class="icon twitter">
-                <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
-            </a>
-
-        </div> 
-    </div>
-</div>
 </body>
+<script src="/workout-videos/Workout-Videos.js"></script>
 </html>
+
+<script>
+    let hamburger = document.querySelector('#hamburger>li>span')
+
+    let hamburgerDown = document.querySelector('#hamburger>li>div')
+    let hamcount = 0
+    hamburger.addEventListener('click', () => {
+        if (hamcount == 0) {
+
+            hamburger.classList.add = 'material-symbols-sharp'
+            hamburger.classList.remove = 'material-symbols-outlined'
+            hamburger.textContent = 'close'
+            hamburgerDown.style.right = '0px'
+            hamcount++
+        } else {
+
+
+            hamburger.textContent = 'menu'
+            hamburger.classList.add = 'material-symbols-outlined'
+            hamburger.classList.remove = 'material-symbols-sharp'
+            hamcount = 0
+            hamburgerDown.style.right = '-70%'
+        }
+
+    })
+</script>
