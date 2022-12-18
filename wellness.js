@@ -4,9 +4,8 @@ const likeUrl = "https://i.ibb.co/Z8j5SXh/heart.png";
 const commentUrl = "https://i.ibb.co/5GxsT67/comment.png";
 const container = document.querySelector(".cards_container");
 const paginationWrapper = document.getElementById("pagination_wrapper");
-const articleUrl = "http://localhost:3000/Articles";
-const sortByAuthor = document.getElementById("sortByAuthors");
-const sortByCategory = document.getElementById("sortByCategory");
+const wellnessUrl = "http://localhost:3000/Wellness"
+const sortByAuthor = document.getElementById("sortByAuthors")
 let outData
 // ---------------------------------------------------------------------
 
@@ -15,9 +14,9 @@ let outData
 //   getArticles(articleUrl)
 // });
 
-async function getArticles(articleUrl){
+async function getArticles(wellnessUrl){
      try {
-        let requestArticles = await fetch(`${articleUrl}?_limit=16`);
+        let requestArticles = await fetch(`${wellnessUrl}?_limit=16`);
             if(requestArticles.ok){
                  let  getData = await requestArticles.json(); 
                  renderData(getData)
@@ -29,7 +28,7 @@ async function getArticles(articleUrl){
  
 
 }
-getArticles(articleUrl)
+getArticles(wellnessUrl)
 
 // pagination-part
 var rootElement = document.documentElement
@@ -40,8 +39,6 @@ var rootElement = document.documentElement
         ${getAsButton(1,"pagination_buttons",1)}
         ${getAsButton(2,"pagination_buttons",2)}
         ${getAsButton(3,"pagination_buttons",3)}
-        ${getAsButton(4,"pagination_buttons",4)}
-        ${getAsButton(5,"pagination_buttons",5)}
         </div>
       `
 
@@ -49,7 +46,7 @@ var rootElement = document.documentElement
       for (let paginationButton of paginationButtons){
         paginationButton.addEventListener("click",function(e){
                 let dataId = e.target.dataset.id
-                getArticles(`${articleUrl}?_limit=16&_page=${dataId}`)
+                getArticles(`${wellnessUrl}?_limit=16&_page=${dataId}`)
                 resetPrimaryClassInPaginationButtons()
                 e.target.classList.add('button_primary')   
                 scrollToTop()
@@ -87,27 +84,24 @@ function getAsButton(text, cls, dataId ) {
         ${ data.map((item)=>{     
             let id = item.id;
             let author = item.author;
-            let category = item.category;
             let image = item.image;
             let title = item.title;
             let readtime = item.readtime;
             let seen = item.seen;
             let likes = item.likes;
             let comment = item.comment;
-            let free = item.free;
-            return getAsCards(id,author,category,image,title,readtime,seen,likes,comment,free)
+            return getAsCards(id,author,image,title,readtime,seen,likes,comment)
         }).join("")}
      `;
  }
 
- function getAsCards(id,author,category,image,title,readtime,seen,likes,comment,free){
+ function getAsCards(id,author,image,title,readtime,seen,likes,comment){
                
     return  `
 
     <!---->
     <div class="cards">
       <img class="pictures" src="${image}" alt="${author}">
-      <div class="free"><div class="freeicon"><p class="freeicontext">Free</p></div></div>
       <p class="box_text">
         ${title}
       </p>
@@ -115,7 +109,7 @@ function getAsButton(text, cls, dataId ) {
       <!-- hidden  --> 
   <div class="hidden">
       <div>
-          <pre class="pre">Category         <span class="boldtext">${category}</span></pre> 
+          <pre class="pre">Equipment         <span class="boldtext"></span></pre> 
         <hr class="line">
         <p>Community</p>
       </div>
@@ -141,44 +135,29 @@ function getAsButton(text, cls, dataId ) {
 
  // sort by authers
 
- async function getAllArticles(articleUrl){
+ async function getAllArticles(wellnessUrl){
   try {
-     let requestArticles = await fetch(articleUrl);
+     let requestArticles = await fetch(wellnessUrl);
          if(requestArticles.ok){
               let  getData = await requestArticles.json();
               outData =[...getData] 
               // renderData(getData)
-              // //console.log(getData)
+              console.log(getData)
          }
   } catch (error) {
      alert("something went wrong in fetching articles")
   } 
-
-
 }
-getAllArticles(articleUrl)
+
+getAllArticles(wellnessUrl)
  sortByAuthor.addEventListener("change",function(){
   let selected = sortByAuthor.value
   if(selected=="author"){
-    getArticles(articleUrl)
+    getArticles(wellnessUrl)
   }
      let filterdata= outData.filter(function(elem){
         
-        return elem.author==selected
- 
-       })    
-       renderData(filterdata)
-       console.log(filterdata)
-   })
-
-   sortByCategory.addEventListener("change",function(){
-  let selected = sortByCategory.value
-  if(selected=="author"){
-    getArticles(articleUrl)
-  }
-     let filterdata= outData.filter(function(elem){
-        
-        return elem.category==selected
+        return elem.creator==selected
  
        })    
        renderData(filterdata)
