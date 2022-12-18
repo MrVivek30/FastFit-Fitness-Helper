@@ -1,3 +1,41 @@
+// <!------------------- navigation bar code ------------>
+let navbar=document.querySelector(".nav")
+    
+window.onscroll=function(){
+    navbar.classList.add("sticky");
+}
+// <!------------------- navigation bar code ------------>
+
+
+let hamburger = document.querySelector('#hamburger>li>span')
+
+let hamburgerDown = document.querySelector('#hamburger>li>div')
+let hamcount = 0
+hamburger.addEventListener('click', () => {
+    if (hamcount == 0) {
+
+        hamburger.classList.add = 'material-symbols-sharp'
+        hamburger.classList.remove = 'material-symbols-outlined'
+        hamburger.textContent = 'close'
+        hamburgerDown.style.right = '0px'
+        hamcount++
+    } else {
+
+
+        hamburger.textContent = 'menu'
+        hamburger.classList.add = 'material-symbols-outlined'
+        hamburger.classList.remove = 'material-symbols-sharp'
+        hamcount = 0
+        hamburgerDown.style.right = '-70%'
+    }
+
+})
+
+
+
+
+
+
 let  postsList = document.querySelector(".post-list")
 let url = "http://localhost:3000/gym";
 let data=[]
@@ -41,20 +79,16 @@ async function showData(){
     }
 }
 showData();
+
 function search(){
     let q=document.querySelector("#search").value;
-    if(q===1||2||4||8){
+ 
         let newData=data.filter(function(elem){
-            return elem.category.toLowerCase().includes(q.toLowerCase())
+            return elem.category.toLowerCase().includes(q.toLowerCase())||elem.title.toLowerCase().includes(q.toLowerCase())
         });
         console.log(newData)
         display(newData)
 
-      
-    }
-    else{
-        console.log("data is not available")
-    }
     
 }
 
@@ -75,49 +109,56 @@ function display(data){
     document.querySelector(".post-list").innerHTML="";
 
     data.forEach(function(elem){
-        let div=document.createElement("div");
-        div.className="card-body"
+        let divu=document.createElement("div");
+        divu.className="card-body"
         
         
         let image=document.createElement("img");
         image.src=elem.img;
-        image.className="card-img-top"
+        image.setAttribute("class","img")
+
         let title=document.createElement("h5");
         title.innerText=elem.title;
-        title.className="card-title"
-        let price=document.createElement("p");
-        price.innerText=elem.price;
-        price.className="card-text"
-        let date=document.createElement("p");
-        let dates=new Date()
-        date.innerText=dates;
-        let author=document.createElement("p");
-        author.innerText=elem.author;
+        title.setAttribute("class","name")
+        
+   
         let category=document.createElement("p");
         category.innerText=elem.category
-        category.className="card-category"
+        category.setAttribute("class","cat")
+
+        let price=document.createElement("p");
+        price.innerText=elem.price;
+        price.setAttribute("class","price")
+
+        let price1=document.createElement("p");
+        price1.innerText="As Low As";
+        price1.setAttribute("class","price1")
+
         let btn =document.createElement("button")
-        btn.innerText="Add to Bag"
-        btn.className="btn"
-        btn.className="btn-primary" 
+        btn.innerText="👜 Add to Bag"
+        btn.setAttribute("class","btn")
+      
         let div1=document.createElement("div")
-        div1.append(price)
+        div1.append(price1,price)
+
         let div2=document.createElement("div");
         div2.append(btn)
+
         let maindiv=document.createElement("div");
         maindiv.append(div1,div2)
-        maindiv.className="vivek"
-        maindiv.style.display="flex";
-        maindiv.style.justifyContent="space-between"
-        maindiv.style.padding="10px 15px"
-        btn.style.marginTop="12px"
+        maindiv.setAttribute("class","cardbuttons")
+        
         btn.addEventListener("click",function(){
             carts.push(elem)
             localStorage.setItem("cart",JSON.stringify(carts))
             alert("product added sucessfully")
             // window.location.href="cart.html"
         })
-        div.append(image,category,title,maindiv);
-        document.querySelector(".post-list").append(div)
+        let div=document.createElement("div");
+        div.setAttribute("class","cardbot")
+        div.append(category,title,maindiv);
+        
+        divu.append(image,div);
+        document.querySelector(".post-list").append(divu)
     });
 }
