@@ -1,3 +1,15 @@
+// const jsonServer = require("json-server"); // importing json-server library
+// const server = jsonServer.create();
+// const router = jsonServer.router("db.json");
+// const middlewares = jsonServer.defaults();
+// const port = process.env.PORT || 3001; // you can use any port number here; i chose to use 3001
+
+// server.use(middlewares);
+// server.use(router);
+
+// server.listen(port);
+
+
 let main = document.getElementById("bod")
 let card = document.querySelector(".cards")
 let paginationWrapper = document.getElementById("pagination");
@@ -83,8 +95,6 @@ function renderCardList(cardData) {
   function getAsCard(imgSrc, title, subT, duration) {
     return `
   <div class="cards">
-   <div class="flip-front">
-   <div class="flip-inner">
     <div class="upper">
         <img src="${imgSrc}" alt="">
     </div>
@@ -99,80 +109,6 @@ function renderCardList(cardData) {
           </div>
         </div>
         </div>
-    </div>
-        <div class="display">
-                    <div><span class="material-symbols-outlined">
-                            unknown_med
-                        </span>
-                    </div>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="heading">Difficulty </td>
-<td>
-                                    <span class="material-symbols-outlined" style="color:red ;">
-                                        local_fire_department
-                                    </span><span class="material-symbols-outlined" style="color:red ;">
-                                        local_fire_department
-                                    </span><span class="material-symbols-outlined" style="color:red ;">
-                                        local_fire_department
-                                    </span><span class="material-symbols-outlined">
-                                        local_fire_department
-                                    </span><span class="material-symbols-outlined">
-                                        local_fire_department
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-
-                                <td class="heading">Training type</td>
-                                <td> Cardiovascular, pilates</td>
-
-
-                            </tr>
-                            <tr>
-                                <td class="heading">Equipments</td>
-                                <td>Mat</td>
-
-                            </tr>
-                            <tr>
-                                <td class="heading">Burn Estimate</td>
-                                <td> 2000 calories</td>
-</tr>
-                        </tbody>
-                    </table>
-                    <table class="table-2">
-                        <tbody>
-                            <tr>
-                                <td>Your stats</td>
-                                <td>Community</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p><span class="material-symbols-outlined" style="color: #4296cb;">
-                                            check_circle
-                                        </span> N/A</p>
-                                </td>
-
-                                <td>
-                                    <p><span class="material-symbols-outlined" style="color: #4296cb;">
-                                            check_circle
-                                        </span> 10</p>
-                                    <p> <span class="material-symbols-outlined" style="color: red;">
-                                            favorite
-                                        </span> 20</p>
-                                    <p><span class="material-symbols-outlined" style="color: green;">
-                                            comment
-                                        </span> 20</p>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-  </div>
-  
   `;
   }
   
