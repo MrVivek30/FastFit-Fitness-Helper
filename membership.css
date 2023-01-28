@@ -1,0 +1,552 @@
+ /* --------------------------------navbar css start---------------------------------------- */
+ *{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+.navbar{
+    
+    /* border: 1px solid; */
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.cate{
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* border: 1px solid; */
+}
+.cate>p{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(33, 36, 50);
+    align-self: flex-end;
+}
+.cate>p:nth-child(7){
+    color: rgb(66, 150, 203);
+}
+.signin{
+    /* border: 1px solid; */
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-end;
+}
+.signin>p+p{
+    /* border: 1px solid; */
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.search_cart{
+    width: 6%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.nav.sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+/* --------------------------------navbar css end---------------------------------------- */
+text{
+    font-size: 38px;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+
+pl{
+    color: rgb(107, 103, 103);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+.top{
+    margin-top: 120px;
+    width: 100%;
+    height: 525px;
+    background: rgb(20,181,227);
+    background: linear-gradient(135deg, rgb(61, 151, 206) 0%, rgb(18, 222, 187) 100%);
+}
+.top>div{
+    width: 75%;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+}
+.top_1{
+    /* border: 1px solid; */
+    color: white;
+    width: 35%;
+    align-self: center;
+}
+.top_2{
+    /* border: 1px solid; */
+    color: white;
+    width: 50%;
+
+}
+.top_1>p:nth-child(1){
+    font-size: 250%;
+    font-weight: 400;
+    line-height: 48px;
+}
+.top_1>p:nth-child(2){
+    font-size: 125%;
+    font-weight: 400;
+    line-height: 32px;
+}
+button{
+    border: 0px;
+    width: 150px;
+    height:50px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border-radius: 5PX;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.intro{
+    padding-top: 50px;
+    width: 98.5%;
+    margin: auto;
+    background-color: rgb(238, 230, 247);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+.intro>div:nth-child(1){
+   /* border: 1px solid; */
+   width: 30%;
+   margin: auto;
+}
+.intro>div:nth-child(1)>p:nth-child(1){
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+}
+.caterogies{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.caterogies>div:nth-child(1){
+
+    padding-top: 50px;
+    background-color: rgb(240, 244, 246);
+}
+.caterogies>div:nth-child(2){
+    padding-top: 50px;
+    background-color: rgb(249, 252, 253);
+}
+.caterogies>div:nth-child(3){
+    padding-top: 50px;
+    color: white;
+    background-color: black;
+}
+.caterogies>div:nth-child(4){
+    padding-top: 50px;
+    background-color: rgb(216, 217, 218);
+}
+.supp{
+    text-align: center;
+    padding-top: 75px;
+}
+.programs{
+    margin-top: 100px;
+    width: 75%;
+    margin: auto;
+}
+.programs>div{   
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 550;
+    line-height: 20px;
+    margin-bottom: 30px;
+    /* border: 1px solid; */
+}
+.programs>div>div>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.programs>div>div>div>div{
+    padding: 20px;
+}
+
+/*------------------------------------------- footer start------------------------------------------------ */
+
+.footer{
+    background-color: rgb(33, 36, 50);
+    color: rgb(123, 127, 146);
+    margin-top: 100px;
+    padding-bottom: 100px;
+    font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.footer h7{
+   color: rgb(227, 235, 238);
+   display: block;
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+
+.footer>div{
+    width: 70%;
+    padding-top: 60px;
+    margin: auto;
+ 
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerlogo{
+    width: 40%;
+   
+}
+.footerbottom{
+    font-size: 12px;
+    background-color: rgb(33, 36, 50);
+    color: rgb(123, 127, 146);
+    margin-top: -20px;
+   
+}
+.footerbottom>div{
+    height: 50px;
+    width: 70%;
+    margin: auto;
+}
+.footerbottom>div>div{
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr{
+   width: 70%;
+   margin: auto;
+   background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: .15px;
+}
+
+.bottom{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------------Membership start-------------------- */
+
+*{
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#membership{
+    width: 100%;
+    margin-top: 80px;
+}
+#membership_top-content{
+    width: 100%;
+    height:380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg,#cbe8ff 0%,#e1ddfa 60%,#ffedc9 100%);
+
+}
+
+#membership_top-content div{
+    width: 30%;
+    height: 320px;
+}
+
+#membership_top-content div:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#membership_top-content div:first-child>h2{
+    padding-right: 65px;
+    padding-left: 65px;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 0%;
+}
+
+
+#membership_top-content div:first-child p{
+    padding-right: 65px;
+    padding-left: 65px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4e5262;
+}
+
+#membership_top-content div img{
+    width: 100%;
+    height: 320px;
+}
+
+#membership_center-content{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#membership_center-content> #membership_center-content_left,#membership_center-content> #membership_center-content_right{
+    width: 100%;
+    height: 180px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+#membership_center-content> #membership_center-content_left{
+    background-color: #edf8fc;
+}
+
+#membership_center-content> #membership_center-content_right{
+    background-color: #f0f4f6;
+}
+
+
+
+#membership_center-content> #membership_center-content_left div,#membership_center-content> #membership_center-content_right div{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#membership_center-content> #membership_center-content_left div h2,#membership_center-content> #membership_center-content_right div h2{
+    margin-bottom: 0%;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+#membership_center-content> #membership_center-content_left div p,#membership_center-content> #membership_center-content_right div p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #4e5262;
+}
+
+#membership_center-content> #membership_center-content_left div button,#membership_center-content> #membership_center-content_right div button{
+    background-color: #212432;
+    padding: 10px 20px 10px ;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-weight: bolder;
+
+}
+
+#membership_center-content> #membership_center-content_left div button a,#membership_center-content> #membership_center-content_right div button a{
+    text-decoration: none;
+    color: white;
+}
+
+#membership_center-content> #membership_center-content_left div h2 span:first-child{
+    font-weight: 700;
+}
+#membership_center-content> #membership_center-content_left div h2 span:last-child{
+    color: #4296cb;
+    font-weight: 700;
+}
+
+#membership_center-content> #membership_center-content_left div a{
+    color: #4296cb;
+    text-decoration: none;
+}
+#membership_center-content> #membership_center-content_left>div>a:hover{
+    text-decoration: underline;
+}
+
+#membership_center_membershipfeatures{
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 60px 0px;
+}
+
+#membership_center_membershipfeatures div{
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#membership_center_membershipfeatures div h2{
+    font-weight: 400;
+    font-size: 35px;
+}
+#membership_center_membershipfeatures>div>table{
+    width: 100%;
+    border-collapse:separate;
+}
+
+#membership_center_membershipfeatures>div>table thead tr{
+    border-bottom: 1px solid #e3ebee;
+}
+#membership_center_membershipfeatures>div>table thead tr th{
+    padding: 5px;
+}
+#membership_center_membershipfeatures>div>table tbody td{
+    padding: 15px;
+    border-top: 1px solid #e3ebee;
+    font-size: 14px;
+}
+
+.membershipfeatures_cell{
+    border-left: 1px solid #e3ebee;
+    width: 20%;
+    text-align: center;
+    color: #26bc35;
+}
+
+.membershipfeatures_cell div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+.membershipfeatures_cell div:nth-child(2){
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.membershipfeatures_cell div button{
+    background-color: #212432;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:first-child{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:nth-child(2){
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+#membership_center-membershipfeatures>div>table tbody:last-child  tr:last-child td:last-child div:last-child{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#membership_bottom-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(130deg,#ece6f8 0%,#f9e7f6 100%);
+    margin-bottom: 100px;
+}
+
+#membership_bottom-content>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+
+#membership_bottom-content div div:first-child{
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0%;
+}
+
+#membership_bottom-content div div:first-child h2{
+    font-size: 36px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0%;
+}
+
+#membership_bottom-content div div:first-child p{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #4e5262;
+}
+
+#membership_bottom-content div div:first-child button{
+    background-color: #8de8ef;
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: rgb(140, 13, 13);
+    margin-left: 10px;
+    
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+}
+
+#membership_bottom-content div div:last-child img{
+    width: 100%;
+}
+

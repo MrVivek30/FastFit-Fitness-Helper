@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Videos | Fitfast</title>
+    <link rel="stylesheet" href="./wellness.css">
+</head>
+<body>
+    <div id="head">
+        <p class="heding">Expert Articles</p>
+        <p class="description">Healthy living content written by physical therapists, registered dietitians and doctors.</p>
+    </div>
+    <div>
+        <hr class="line">
+        <!-- select tag -->
+          <div style="display: flex; padding-left: 90px;">
+          <div class="select">
+            <select name="sortByAuthors" id="sortByAuthors">
+               <option value="author" >AUTHORS</option>
+               <option value="Daniel">Daniel</option>
+               <option value="Haley">Haley</option>
+               <option value="Kellie">Kellie</option>
+               <option value="Candice">Candice</option>
+            </select>
+         </div>
+          <div class="select">
+            <select name="format" id="format">
+               <option selected disabled>FILTERS</option>
+            </select>
+         </div>
+        </div>
+         <!-- show articles -->
+         <div class="container">
+            <div class="cards_container">     
+            </div>
+            <div id="pagination_wrapper" class="pagination_wrapper"></div>
+         </div>
+</body>
+</html>
+<script src="./wellness.js"></script>

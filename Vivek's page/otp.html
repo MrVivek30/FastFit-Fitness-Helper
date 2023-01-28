@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Checkout | Fitfast</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0px;
+            padding: 0px;
+         }
+         .head{
+            height: auto;
+         }
+         .heading{
+            font-size: 50px;
+            margin-left: 100px;
+         }
+         .main{
+            height: auto;
+            background-color: rgb(240, 244, 246);
+            padding-top: 40px;
+            padding-bottom: 50px;
+         }
+         .container{
+            width: 85%;
+            height: auto;
+            background-color: white;
+            margin: auto;
+            padding-top: 1px;
+            padding-bottom: 50px;
+         }
+         .billing_info{
+            font-size: 25px;
+            font-weight: 570;
+            margin-left: 550px;
+            margin-bottom: 20px;
+         }
+         .line{
+            background: rgb(235, 235, 235);
+            border: none;
+            height: 1px;
+            margin-bottom: 30px;
+        }
+        input{
+            display: block;
+            width: 50%;
+            margin: auto;
+            height: 40px;
+            margin-bottom: 23px;
+            padding-left: 15px;
+            font-size: 17px;
+            transition: 0.5s;
+            outline: none;
+            margin-top: 20px;
+            border: 1px solid rgb(235, 235, 235);
+        }
+        input:focus {
+            border: 3px solid rgb(35, 141, 193);
+        }
+        label{
+            margin-left: 317px;
+            font-size: 18px;
+            color: rgb(137, 137, 137);
+        }
+        #cancel{
+           margin-left: 315px;
+           font-size: 19px;
+           text-decoration: none;
+           color: rgb(35, 141, 193);
+        }
+        #pay{
+            margin-left: 370px;
+            font-size: 19px;
+            font-weight: 550;
+            text-decoration: none;
+            color:white;
+            padding: 20px 40px;
+            background-color: rgb(35, 141, 193) ;
+            border-radius: 5px;
+        }
+        #Code{
+            margin-bottom: 40px;
+        }
+        .last{
+            padding: 7px;
+            width: 65%;
+            margin: auto;
+            margin-top: 25px;
+            background-color: rgb(227, 235, 238);
+        }
+        .last p{
+           font-size: 18px;
+           margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <p class="heading">Checkout</p>
+    </div>
+ <!--  -->
+      
+     <div class="main">
+        <div class="container">
+            <p class="billing_info">Enter OTP</p>
+            <hr class="line">
+            <form id="form">
+                <label for="Code">OTP (4 digits)</label>
+                <input id="Code" type="password" class="cvv" placeholder="CVV" maxlength='4'>
+                <a href="/index.html" id="cancel">Cancel</a>
+                <a href="deliverytask.html" id="pay">CONFIRM ORDER</a>
+            </form>
+        </div>
+         <div class="last">
+            <p>By purchasing an FB Plus Pass, you agree to Fitness Blender’s <a href="" style="text-decoration: none; color:rgb(35, 141, 193) ;">FB Plus Pass Terms and Conditions</a>, including no refunds.</p>
+         </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let user = document.querySelector("#otp");
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (user.value == "1234") {
+            alert("payment successful")
+            window.location.href="deliverytask.html"
+        }
+        else {
+            alert("please enter correct otp")
+        }
+    })
+</script>

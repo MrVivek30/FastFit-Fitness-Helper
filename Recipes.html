@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Fastfit</title>
+    <link rel="stylesheet" href="/Recipes.css">
+</head>
+<body>
+    <div id="head">
+        <p class="heding">Recipes</p>
+        <p class="description">Healthy, whole food recipes that nourish your body and your tastebuds.</p>
+    </div>
+    <div>
+        <hr class="line">
+        <!-- select tag -->
+          <div style="display: flex; padding-left: 90px;">
+          <div class="select">
+            <select name="sortByAuthors" id="sortByAuthors">
+               <option value="author" >AUTHORS</option>
+               <option value="Patterson">Patterson</option>
+            </select>
+         </div>
+          <div class="select">
+            <select name="sortByMembership" id="sortByMembership">
+               <option value="FILTERS">FILTERS</option>
+               <option value="true">Free</option>
+               <option value="false">Plus</option>
+            </select>
+         </div>
+        </div>
+         <!-- show recipes -->
+         <div class="container">
+            <div class="cards_container">     
+            </div>
+            <div id="pagination_wrapper" class="pagination_wrapper"></div>
+         </div>
+</body>
+</html>
+<script src="./Recipes.js"></script>

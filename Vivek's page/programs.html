@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <title>Workout Programs</title>
+    <link rel="stylesheet" href="display.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
@@ -14,13 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-    <link rel="icon" href="logo.jpg" type="image/gif" sizes="16x16">
-    <title>FastFit-"Fitness Helper"</title>
-
-    <style>
-    /* --------------------------------navbar css start---------------------------------------- */
-          /* nav */
+   <style>
+           /* nav */
     * {
         font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     margin: 0;
@@ -278,152 +276,73 @@
      
     } */
   }
-        
 /* --------------------------------navbar css end---------------------------------------- */
-        text{
-            font-size: 38px;
-            font-weight: 400;
-            line-height: normal;
-           
-        }
         .container{
-           
+          width: 80%;
+          margin-top: 150px;
         }
-        pl{
-            color: rgb(107, 103, 103);
-            font-size: 12px;
+       
+      .post-list{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
+        width: 100%;
+        gap: 8px;
+        margin-top: 50px;
+        /* padding: 30px; */
+      }
+      .post-list img{
+        width: 100%;
+      }
+      .card-body{
+      
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        /* line-height: 30px; */
+        /* height: 80vh; */
+
+        /* text-align: center; */
+        /* padding: 20px 40px; */
+        /* line-height: 45px; */
+      }
+      .name{
+        font-size: 15px;
+            font-weight: 600;
+            line-height: normal;
+      }
+
+      .price{
+        font-size: 15px;
+            font-weight: 600;
+            line-height: normal;
+      }
+
+      .cat,.price1{
+        font-size: 10px;
             font-weight: 400;
             line-height: normal;
-        }
-        .top{
-            margin-top: 10px;
-            width: 100%;
-            height: 525px;
-            background: rgb(20,181,227);
-            background: linear-gradient(135deg, rgb(61, 151, 206) 0%, rgb(18, 222, 187) 100%);
-        }
-        .top>div{
-            width: 75%;
-            margin: auto;
-            /* border: 1px solid; */
-            display: flex;
-            justify-content: flex-end;
-        }
-        .top_1{
-            /* border: 1px solid; */
-            color: white;
-            width: 35%;
-            align-self: center;
-        }
-        .top_2{
-            /* border: 1px solid; */
-            color: white;
-            width: 50%;
+            color: gray;
+      }
+      .cardbot{
+        padding: 20px;
+      }
+      .cardbuttons{
+        
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn{
+        margin-top: 10px;
+        color: white;
+        background-color: rgb(66, 150, 203);
+      }
 
-        }
-        .top_1>p:nth-child(1){
-            font-size: 250%;
-            font-weight: 400;
-            line-height: 48px;
-        }
-        .top_1>p:nth-child(2){
-            font-size: 125%;
-            font-weight: 400;
-            line-height: 32px;
-        }
-        button{
-            border: 0px;
-            width: 150px;
-            height:50px;
-            color: white;
-            background-color: rgb(44, 44, 44);
-            border-radius: 5PX;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 16px;
-        }
-        .intro{
-            padding-top: 50px;
-            width: 98.5%;
-            margin: auto;
-            background-color: rgb(238, 230, 247);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            font-size: 16px;
-            font-weight: 100;
-            line-height: 25px;
-            
-        }
-        .intro>div:nth-child(1){
-           /* border: 1px solid; */
-           width: 30%;
-           margin: auto;
-        }
-        .intro>div:nth-child(1)>p:nth-child(1){
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 48px;
-        }
-        .caterogies{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 10px;
-            margin: auto;
-            margin-top: 50px;
-            text-align: center;
-        }
-        .caterogies>div:nth-child(1){
 
-            padding-top: 50px;
-            background-color: rgb(240, 244, 246);
-        }
-        .caterogies>div:nth-child(2){
-            padding-top: 50px;
-            background-color: rgb(249, 252, 253);
-        }
-        .caterogies>div:nth-child(3){
-            padding-top: 50px;
-            color: white;
-            background-color: black;
-        }
-        .caterogies>div:nth-child(4){
-            padding-top: 50px;
-            background-color: rgb(216, 217, 218);
-        }
-        .supp{
-            text-align: center;
-            padding-top: 75px;
-        }
-        .programs{
-            margin-top: 100px;
-            width: 75%;
-            margin: auto;
-        }
-        .programs>div{   
-            margin: auto;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 10px;
-            font-size: 13px;
-            font-weight: 550;
-            line-height: 20px;
-            margin-bottom: 30px;
-            /* border: 1px solid; */
-        }
-        .programs>div>div>div{
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        }
-        .programs>div>div>div>div{
-            padding: 20px;
-        }
-
+      
         /* -----------------footer--------------- */
         .footer{
             background-color: rgb(33, 36, 50);
             color: rgb(123, 127, 146);
-            margin-top: 100px;
+            margin-top: 50px;
             padding-bottom: 100px;
             font-family:  "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
             font-size: 12px;
@@ -483,13 +402,18 @@
             display: flex;
             justify-content: space-between;
         }
-
-
+        .filter{
+          padding: 10px;
+        }
+        #search{
+          padding: 6px 60px 6px 5px;
+        }
+     
     </style>
 </head>
 <body>
 
-    <!------------------- navigation bar part ------------>
+      <!------------------- navigation bar part ------------>
 <!------------------- navigation bar part ------------>
   <!-- Nav Bar -->
 
@@ -497,7 +421,7 @@
     <div id="nav">
 
         <div id="logo">
-            <img width="80%"  src="../workout-videos/fitnesSHELPER.png" alt="">
+         <a href="../index.html"><img width="80%"  src="../workout-videos/fitnesSHELPER.png" alt=""></a>   
         </div>
         <div id="nav-mega">
             <li><a href="WORKOUT.HTML">WORKOUTS</a><span class="material-symbols-outlined">
@@ -774,251 +698,112 @@
 
 
 
-    <!------------------- contain_part bar part --------------------------->
-    <div class="container">
-        <div class="top">
-            <div >
-                <div class="top_1">
-                 <p>Feel Great.<br>Body and Mind.</p>
-                 <p>Choose from hundreds of workouts, healthy recipes, relaxing meditations, and expert articles, for a whole body and mind approach to feeling great.</p>   
-                <button class="joinNow">JOIN NOW</button>
-                </div>
-                <div class="top_2" >
-                    <img width="90%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.webp" alt="">
-                </div>
-            </div>
+
+
+<div class="container">
+  <h2>Workout Programs</h2>
+   
+   <select onchange="filter()" class="filter" name="" id="">
+    <option value="Workout Programs">filter</option>
+    <option value="1-week">1 Week</option>
+    <option value="2-week">2 Weeks</option>
+    <option value="4-week">4 Weeks</option>
+    <option value="8-week">8 Weeks</option>
+   </select>
+   
+   <input type="text" id="search" placeholder="Keyword Search" onchange="search()">
+    <div class="post-list row" >
         </div>
 
-        <div class="intro">
-            <div>
-               <text>Introducing <br>
-                FB Plus Passes</text>
-                <p>Passes give you full access to everything FB Plus has to offer, 
-                    without a long-term subscription. 
-                    Choose a pass that fits your budget and your schedule.</p>
-                <button>BUY A PASS</button> 
-            </div>
-            <div>
-                <img width="50%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/passes-720.webp" alt="">
-            </div>
-             </div>
-
-             <div class="caterogies">
-                <div>
-                    <text>Workout Videos</text>
-                    <p>Exercise with certified personal trainers whether you’re at home or on the road.</p>
-                    <a href="">Find a Workout</a>
-                    <img  width="90%"  src="https://cloudfront.fitnessblender.com/assets/img/homepage/workouts-720.webp" alt="">
-                </div>
-                <div>
-                    <text>Programs</text>
-                    <p> Professionally designed programs take the guesswork out of exercising.</p>
-                    <a href="">Browse All Programs</a>
-                    <img width="90%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/programs-720.webp" alt="">
-                </div>
-                <div>
-                    <text>Wellness Articles</text>
-                    <p>Research-backed articles to help you care for your body and mind.</p>
-                    <a href="">Learn from Experts</a>
-                    <img width="90%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/articles-720.webp" alt="">
-                </div>
-                <div>
-                    <text>Healthy Recipes</text>
-                    <p>Fuel your day with recipes by Registered Dietitians and professional chefs.</p>
-                    <a href="">Find a Recipes</a>
-                    <img width="90%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/recipes-720.webp" alt="">
-                </div>
-             </div>
-
-
-             <div class="supp">
-                <text>Supportive Community</text>
-                <p>Stay motivated and engaged with a little help from a supportive community of other members.</p>
-                <a href="">Become a Member</a>
-                <img width="100%" src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-2160.webp" alt="">
-             </div>
+</div>
 
 
 
-             <div class="programs">
-                <text>Not sure where to start?</text>
-                <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track.</p>
-                <div >
-                    <div>
-                        <p>Perfect for Beginners</p>
-                        <div>
-                           <img width="100%" src="https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_31_fb-low-impact-round-2-fat-loss-program-40-minutes-or-less.jpg" alt="">
-                        <div><pl>4 WEEK PROGRAM - 34 MIN/DAY</pl>
-                        <p>FB Low Impact Round 2 - Build Muscle & Burn Fat - 40 Minutes</p>
-                        
-                        <pl>  $14.99</pl> </div>
-                           
-                        </div>
-                        
-                    </div>
-                    <div>
-                        <p>You Choose</p>
-
-                        <div>
-                        <img  width="100%" src="https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_29_4-week-fb-blend-burn-fat-build-muscle-tone-35-or-55-minutes-a-day.jpg" alt="">
-                        <div><pl>4 WEEK PROGRAM - 38 MIN/DAY</pl>
-                        <p>FB Blend - Burn Fat, Build Muscle, Tone; 35 or 55 Minutes a Day</p>
-                        <pl>$14.99</pl></div>
-                        
-
-                        </div>
-                        
-                    </div>
-                    <div>
-                        <p>Short on Time?</p>
-                        <div>
-                         <img  width="100%" src="https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_28_fb-30-4-week-fat-loss-program-for-busy-people-round-4.jpg" alt="">
-                        
-                        <div>
-                           <pl>4 WEEK PROGRAM - 30 MIN/DAY</pl>
-                        <p>FB 30 - Fat Loss Program For Busy People (Round 4)</p>
-                        <pl>$14.99</pl>    
-                        </div>
-                         
-                        </div>
-                        
-                    </div>
-                    <div>
-                        <p>No Equipment Necessary</p>
-                        <div>
-                         <img  width="100%" src="https://d18zdz9g6n5za7.cloudfront.net/plan/1020/1020-o_7_fb-bodyweight-bodyweight-only-fat-loss-program.jpg" alt="">
-                        <div>
-                          <pl>4 WEEK PROGRAM - 40 MIN/DAY</pl>
-                        <p>FB Bodyweight - Bodyweight Only Fat Loss Program</p>
-                        <pl>$14.99</pl>     
-                        </div>
-                        
-                        </div>
-                        
-                    </div>
-                </div>
-                <a href="">View All Programs</a>
-             </div>
-   </div>
-
-
-    <!------------------- footer part --------------------------->
+            <!------------------- footer part --------------------------->
     <div class="footer">
-        <div>
-            <div class="footerlogo">
-                <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
-                <p>WORKOUT COMPLETE™</p>
-            </div>
-    
-            <div>
-                <h7>WORKOUTS</h7>   
-                <p> WORKOUT VIDEOS</p> 
-                <p>CUSTOM WORKOUTS</p>  
-                <h7> PROGRAMS</h7>  
-                <p>WORKOUT PROGRAMS</p>  
-                <p>MEAL PLANS</p>   
-                <p>PILOT PROGRAMS</p>   
-                <p> ROUTINES</p>   
-            </div>
-    
-            <div>
-                <h7>HEALTHY LIVING</h7>
-                <p>FITNESS</p>
-                <p>HEALTH</p>
-                <p>NUTRITION</p>
-                <p>HEALTHY RECIPES</p>
-                <p>EXPERTS</p>
-            </div>
-    
-            <div>
-                <h7>ABOUT</h7>
-                <p>CAREERS</p> 
-                <p>TUTORIALS</p>
-                <p>OUR TEAM</p>
-                <p>B2B OPTIONS</p> 
-            </div>
-    
-            <div>
-                <h7>MEMBERSHIP</h7>
-                <h7>FB PLUS</h7>
-                <h7>COMMUNITY</h7>
-                <h7>BLOG</h7>
-                <h7>CONTACT US</h7>
-                <h7>FAQ</h7>
-                <h7>STORE</h7>
-            </div>
-            
-        </div>
-       
-    </div>
-    <div class="footerbottom"> 
-        <hr>
+      <div>
+          <div class="footerlogo">
+              <img width="50%" src="https://i.postimg.cc/y8BXKHqY/fitnes-SHELPER-1.png" alt="">
+              <p>WORKOUT COMPLETE™</p>
+          </div>
+  
+          <div>
+              <h7>WORKOUTS</h7>   
+              <p> WORKOUT VIDEOS</p> 
+              <p>CUSTOM WORKOUTS</p>  
+              <h7> PROGRAMS</h7>  
+              <p>WORKOUT PROGRAMS</p>  
+              <p>MEAL PLANS</p>   
+              <p>PILOT PROGRAMS</p>   
+              <p> ROUTINES</p>   
+          </div>
+  
+          <div>
+              <h7>HEALTHY LIVING</h7>
+              <p>FITNESS</p>
+              <p>HEALTH</p>
+              <p>NUTRITION</p>
+              <p>HEALTHY RECIPES</p>
+              <p>EXPERTS</p>
+          </div>
+  
+          <div>
+              <h7>ABOUT</h7>
+              <p>CAREERS</p> 
+              <p>TUTORIALS</p>
+              <p>OUR TEAM</p>
+              <p>B2B OPTIONS</p> 
+          </div>
+  
+          <div>
+              <h7>MEMBERSHIP</h7>
+              <h7>FB PLUS</h7>
+              <h7>COMMUNITY</h7>
+              <h7>BLOG</h7>
+              <h7>CONTACT US</h7>
+              <h7>FAQ</h7>
+              <h7>STORE</h7>
+          </div>
+          
+      </div>
+     
+  </div>
+  <div class="footerbottom"> 
+      <hr>
+      <div>
         <div>
           <div>
-            <div>
-                Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
-            </div>
-       
-            <div class="bottom"> 
-                <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
-                    <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
-                </a>
-                <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
-                    <span><i style="font-size:24px"  class="fab fa-github"></i></span>
-                </a>
-                <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
-                <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
-                </a>
-                
-                <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
-                    <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
-                </a>
-                
-                <a href="https://twitter.com/FitnessBlender" class="icon twitter">
-                    <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
-                </a>
-                
-            </div> 
-        </div>
-        
-        
-        
- </div>
+              Copyright © 2022 Fitness Blender. All rights reserved. Terms of Use Privacy Policy
+          </div>
+     
+          <div class="bottom"> 
+              <a href="https://www.youtube.com/user/FitnessBlender" class="icon youtube">
+                  <span><i style="font-size:24px"  class="fab fa-youtube"></i></span>
+              </a>
+              <a href="https://www.pinterest.com/FitnessBlender/" class="icon github">
+                  <span><i style="font-size:24px"  class="fab fa-github"></i></span>
+              </a>
+              <a href="https://www.facebook.com/fitnessblender/" class="icon facebook">
+              <span><i style="font-size:24px" class="fab fa-facebook-f"></i></span>
+              </a>
+              
+              <a href="https://www.instagram.com/fitnessblender/" class="icon instagram">
+                  <span><i  style="font-size:24px" class="fab fa-instagram"></i></span>
+              </a>
+              
+              <a href="https://twitter.com/FitnessBlender" class="icon twitter">
+                  <span><i style="font-size:24px"  style="font-size:24px"  class="fab fa-twitter"></i></span>
+              </a>
+              
+          </div> 
+      </div>
+      
+      
+      
+</div>
+
+
+
 </body>
 </html>
-
-
-<script>
-// <!------------------- navigation bar code ------------>
-    let navbar=document.querySelector(".nav")
-    
-    window.onscroll=function(){
-        navbar.classList.add("sticky");
-    }
-// <!------------------- navigation bar code ------------>
-
-let hamburger = document.querySelector('#hamburger>li>span')
-
-let hamburgerDown = document.querySelector('#hamburger>li>div')
-let hamcount = 0
-hamburger.addEventListener('click', () => {
-    if (hamcount == 0) {
-
-        hamburger.classList.add = 'material-symbols-sharp'
-        hamburger.classList.remove = 'material-symbols-outlined'
-        hamburger.textContent = 'close'
-        hamburgerDown.style.right = '0px'
-        hamcount++
-    } else {
-
-
-        hamburger.textContent = 'menu'
-        hamburger.classList.add = 'material-symbols-outlined'
-        hamburger.classList.remove = 'material-symbols-sharp'
-        hamcount = 0
-        hamburgerDown.style.right = '-70%'
-    }
-
-})
-
-</script>
+<script src="programs.js"></script>

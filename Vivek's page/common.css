@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#form {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    background-color: whitesmoke;
+    /* border: 2px solid black; */
+    /* background-color: rgb(131, 169, 228); */
+    border-radius: 20px;
+    /* box-shadow: rgba(178, 10, 10, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(224, 6, 6, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    box-shadow: rgba(233, 6, 6, 0.17) 0px -23px 25px 0px inset, rgba(241, 5, 5, 0.15) 0px -36px 30px 0px inset, rgba(226, 7, 7, 0.1) 0px -79px 40px 0px inset, rgba(248, 6, 6, 0.06) 0px 2px 1px, rgba(235, 10, 10, 0.09) 0px 4px 2px, rgba(215, 13, 13, 0.09) 0px 8px 4px, rgba(226, 8, 8, 0.09) 0px 16px 8px, rgba(223, 10, 10, 0.09) 0px 32px 16px;
+    background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+}
+
+#form h1 {
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    padding: 10px;
+    width: 60%;
+    margin: 15px;
+    border-radius: 23px;
+    /* border: none; */
+    /* outline: none; */
+}
+
+.submit {
+    padding: 10px 25px;
+    margin-top: 50px;
+    width: 40%;
+    border-radius: 23px;
+    /* border: none;
+    outline: none; */
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: rgb(60, 193, 234);
+}
+
+ul {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(14, 14, 248);
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+body {
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    /* background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% ); */
+}
